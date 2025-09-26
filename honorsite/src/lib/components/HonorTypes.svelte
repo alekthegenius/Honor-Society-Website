@@ -1,5 +1,5 @@
-<div style="padding: 2rem;">
-    <h1>View the Honor Societies We Offer</h1>
+<div style="padding: 2rem; background-color: #F8F4E3;">
+    <h1>We Offer 3 Unique Honor Societies</h1>
     <div class="honor-type-description">
         <a href="https://etasigmaalpha.com/" class="column">
             <h2>Eta Sigma Alpha</h2>
@@ -24,20 +24,21 @@
         display: flex;
         justify-self: center;
         text-align: center;
-        color: white;
+        color: #F8F4E3;
         padding: 1rem 2rem;
         background-color: #2A2B2A;
         border-left: #8e52d2 solid 5px;
         border-bottom: #8e52d2 solid 5px;
+        margin-bottom: 2rem;
     }
 
     h2 {
-        color: white;
+        color: #F8F4E3;
 
     }
 
     p {
-        color: white;
+        color: #F8F4E3;
     }
 
     .honor-type-description {

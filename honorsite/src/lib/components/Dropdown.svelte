@@ -5,21 +5,23 @@
 <div class="dropdown-menu">
     <!-- Dropdown menu content goes here -->
     {#if isMobile}
-        <a class="dropdown-menu-item" href="https://www.faith-homeschool.com/index.htm">Apply</a>
-        <a class="dropdown-menu-item" href="https://www.faith-homeschool.com/join.htm">Events</a>
-        <a class="dropdown-menu-item" href="https://www.faith-homeschool.com/signup2.htm">Team</a>
-        <a class="dropdown-menu-item" href="https://www.faith-homeschool.com/tascs.htm">Photos</a>
+        <a class="dropdown-menu-item" href="/">Home</a>
+        <a class="dropdown-menu-item" href="/apply">Apply Now</a>
+        <a class="dropdown-menu-item" href="/events">View Events</a>
+        <a class="dropdown-menu-item" href="/team">Meet The Team</a>
+        <a class="dropdown-menu-item" href="/photos">See Our Favorite Pics</a>
         <div style="height: 2px; background-color: rgba(255, 255, 255, 0.5);"></div>
-        <a class="dropdown-menu-item" href="https://www.faith-homeschool.com/index.htm">Home</a>
+        <a class="dropdown-menu-item" href="https://www.faith-homeschool.com/index.htm">FAITH Home</a>
         <a class="dropdown-menu-item" href="https://www.faith-homeschool.com/join.htm">Join FAITH</a>
         <a class="dropdown-menu-item" href="https://www.faith-homeschool.com/signup2.htm">Extracurriculars</a>
         <a class="dropdown-menu-item" href="https://www.faith-homeschool.com/tascs.htm">Teen Volunteers</a>
         <a class="dropdown-menu-item" href="https://www.faith-homeschool.com/linksnew.htm">Helpful Links</a>
     {:else}
-        <a class="dropdown-menu-item" href="https://www.faith-homeschool.com/index.htm">Apply</a>
-        <a class="dropdown-menu-item" href="https://www.faith-homeschool.com/join.htm">Events</a>
-        <a class="dropdown-menu-item" href="https://www.faith-homeschool.com/signup2.htm">Team</a>
-        <a class="dropdown-menu-item" href="https://www.faith-homeschool.com/tascs.htm">Photos</a>
+        <a class="dropdown-menu-item" href="/">Home</a>
+        <a class="dropdown-menu-item" href="/apply">Apply Now</a>
+        <a class="dropdown-menu-item" href="/events">View Events</a>
+        <a class="dropdown-menu-item" href="/team">Meet The Team</a>
+        <a class="dropdown-menu-item" href="/photos">See Our Favorite Pics</a>
     {/if}
 
 

@@ -17,7 +17,7 @@
     <div class="flex-section">
         <h1>Application Links</h1>
         <div class="application-links">
-             <a href={SigmaApp} download="Eta Sigma Alpha Honor Society Application">Eta Sigma Alpha Honor Society</a>
+            <a href={SigmaApp} download="Eta Sigma Alpha Honor Society Application">Eta Sigma Alpha Honor Society</a>
             <a href="https://www.mathhonorsociety.com/apply-renew-senior-upgrade">Mu Eta Sigma Math Honor Society</a>
             <a href="https://etasigmaalpha.com/nhsshs-application/">National Home School Science Honor Society</a>
         </div>
@@ -67,7 +67,7 @@
     .applying-description {
         display: flex;
         flex-direction: row;
-        align-items: center;
+        align-items: left;
         justify-content: space-around;
         
         background-color: rgb(74, 196, 155);
@@ -79,7 +79,7 @@
 
     p {
         font-size: 1.2rem;
-        color: white;
+        color: #F8F4E3;
         padding: 0;
     }
 
@@ -98,13 +98,14 @@
         text-decoration: none;
         display: flex;
         align-items: center;
+        text-align: center;
         width: 100%;
         color: white;
         margin: 10px;
         font-size: 1.1rem;
         font-weight: bold;
         padding: 1rem;
-        border: 2px white solid;
+        border: 2px #F8F4E3 solid;
         border-radius: 10px;
         transition: background-color 0.3s, color 0.3s;
     }
@@ -112,12 +113,12 @@
     @media all and (hover: hover) {
         .application-links a:hover {
             color: #2A2B2A;
-            background-color: white;
+            background-color: #F8F4E3;
         }
     }
 
     h1 {
-        color: white;
+        color: #F8F4E3;
     }
 
     .flex-grid-container h1 {

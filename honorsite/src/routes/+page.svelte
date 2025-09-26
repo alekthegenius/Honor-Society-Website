@@ -25,9 +25,9 @@
 		</div>
 
 		<div class="top-section-second-section">
-			<a href="https://www.faith-homeschool.com/honor.htm" class="top-section-join-button">Apply Now</a>
-            <a href="https://www.faith-homeschool.com/honor.htm" class="top-section-join-button">View Group Events</a>
-            <a href="https://www.faith-homeschool.com/honor.htm" class="top-section-join-button">Meet the Officers</a>
+			<a href="/apply" class="top-section-join-button">Apply Now</a>
+            <a href="/events" class="top-section-join-button">View Group Events</a>
+            <a href="/team" class="top-section-join-button">Meet the Officers</a>
 		</div>
 	</div>
 
@@ -57,9 +57,11 @@
 
 </div>
 
+<HonorTypes />
+
 <WhyJoin />
 
-<HonorTypes />
+
 
 <Applying />
 
