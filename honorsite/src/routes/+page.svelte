@@ -4,6 +4,8 @@
 	import headerImage from '$lib/assets/header-background-image.jpg?enhanced';
 
     import Applying from "$lib/components/Applying.svelte";
+    import HonorTypes from "$lib/components/HonorTypes.svelte";
+    import WhyJoin from "$lib/components/WhyJoin.svelte";
 
     export let data;
     const { events } = data;
@@ -37,11 +39,15 @@
     <span> ~ Proverbs 24:3-4</span>
 </div>
 
+
 <div class="double-column">
     <div class="aside">
         <h1>National Homeschool Honor Society</h1>
         <p>
-            Eta Sigma Alpha is the national home school honor society. It recognizes achievements, encourages scholarship, and empowers leaders among the homeschool community. From volunteer opportunities, to elevating your academic resume, Eta Sigma Alpha is the place for you to nurture your talents and celebrate each others accomplishments in fellowship.
+            Eta Sigma Alpha is the national home school honor society. It recognizes and encourages scholarship among home school students.
+        </p>
+        <p>
+            Membership is for 9th - 12th grade home school students who meet the requirements for membership listed below. Students can apply for membership anytime during the year by completing the membership application and submitting it with the required documents and membership fee.
         </p>
     </div>
     
@@ -50,6 +56,10 @@
     </div>
 
 </div>
+
+<WhyJoin />
+
+<HonorTypes />
 
 <Applying />
 

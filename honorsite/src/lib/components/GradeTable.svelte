@@ -153,8 +153,7 @@
     background-color: white;
     border-spacing: 1px;
     border: hidden;
-    border-radius: 1rem;;
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.518);
+    border-radius: 1rem;
   }
 
   th, td {

@@ -50,6 +50,11 @@
 	<meta name="description" content="Faith Honor Society is a national homeschool honor society that recognizes achievements, encourages scholarship, and empowers leaders among the homeschool community.">
 	<meta name="theme-color" content="#2a2b2a">
 	<link rel="manifest" href="{sitemanifest}">
+
+	<link
+		rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+	/>
 </svelte:head>
 
 <header style="box-shadow: {dropdownOpen ? 'none' : '0 5px 5px rgba(0, 0, 0, 0.326)'};">
