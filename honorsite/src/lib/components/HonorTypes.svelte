@@ -1,26 +1,34 @@
-<h1>View the Honor Societies We Offer</h1>
-<div class="honor-type-description">
-    <a href="https://etasigmaalpha.com/" class="column">
-        <h2>Eta Sigma Alpha</h2>
-        <p>For excellence in overall scholarship</p>
-    </a>
+<div style="padding: 2rem;">
+    <h1>View the Honor Societies We Offer</h1>
+    <div class="honor-type-description">
+        <a href="https://etasigmaalpha.com/" class="column">
+            <h2>Eta Sigma Alpha</h2>
+            <p>For excellence in overall scholarship</p>
+        </a>
 
-    <a href="https://www.mathhonorsociety.com/" class="column"> 
-        <h2>Mu Eta Sigma</h2>
-        <p>For excellence in math</p>
-    </a>
+        <a href="https://www.mathhonorsociety.com/" class="column"> 
+            <h2>Mu Eta Sigma</h2>
+            <p>For excellence in math</p>
+        </a>
 
-    <a href="https://nhsshs.org/" class="column">
-        <h2>National Home School Science</h2>
-        <p>For excellence in science</p>
-    </a>
+        <a href="https://nhsshs.org/" class="column">
+            <h2>National Home School Science</h2>
+            <p>For excellence in science</p>
+        </a>
+    </div>
 </div>
+
 
 <style>
     h1 {
+        display: flex;
+        justify-self: center;
         text-align: center;
-        color: #8e52d2;
-        padding: 1rem;
+        color: white;
+        padding: 1rem 2rem;
+        background-color: #2A2B2A;
+        border-left: #8e52d2 solid 5px;
+        border-bottom: #8e52d2 solid 5px;
     }
 
     h2 {
@@ -37,7 +45,6 @@
         justify-content: space-between;
         text-align: center;
         flex-direction: row;
-        padding: 1.5rem;
 
         
     }
@@ -67,6 +74,7 @@
             width: 100%;
             margin-bottom: 1rem;
         }
+
     }
 
 </style>
