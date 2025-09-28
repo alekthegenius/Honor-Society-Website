@@ -1,3 +1,4 @@
 <h1>
-    Apply to Eta Sigma Alpha!
+    View Our Upcoming Events!
 </h1>
+

@@ -6,6 +6,7 @@
     import Applying from "$lib/components/Applying.svelte";
     import HonorTypes from "$lib/components/HonorTypes.svelte";
     import WhyJoin from "$lib/components/WhyJoin.svelte";
+    import Officers from "$lib/components/Officers.svelte";
 
     export let data;
     const { events } = data;
@@ -61,7 +62,7 @@
 
 <WhyJoin />
 
-
+<Officers />
 
 <Applying />
 
@@ -134,7 +135,8 @@
 		font-size: 3.5rem;
 		margin: 0 0 1rem 0;
 		text-wrap-mode: wrap;
-
+        animation: lightSpeedInLeft;
+        animation-duration: 1s;
 	}
 
 

@@ -8,7 +8,7 @@
 
 <div class="footer">
     <div>
-        <h1>Contact Info</h1>
+        <h1>Contact</h1>
         <div class="contact-container">
 
             <a href="mailto:faith_home_school@yahoo.com" class="full-email"><span class="icon"><Fa icon={faEnvelope} /></span>faith_home_school@yahoo.com</a>
@@ -33,6 +33,7 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        align-items: center;
         background-color: #2A2B2A;
         padding: 2rem;
 
@@ -40,7 +41,8 @@
 
     h1 {
         color: #F8F4E3;
-        margin: 0 0 .5rem 0;
+        margin: 0 0 0 0;
+        font-size: 1.5rem;
         font-family: 'Times New Roman', Times, serif;
     }
 
@@ -49,7 +51,8 @@
         color: #F8F4E3;
         font-family: 'Times New Roman', Times, serif;
         padding: 0;
-        margin: 0 0 1rem 0;
+        font-size: 1.1rem;
+        margin: 0 0 0.5rem 0;
     }
     
     .icon {
@@ -59,6 +62,7 @@
     p {
         text-align: right;
         max-width: 400px;
+        font-size: 1rem;
         color: #F8F4E3;
         font-family: 'Times New Roman', Times, serif;
         padding: 0;
@@ -68,7 +72,7 @@
     a {
         text-decoration: none;
         color: #F8F4E3;
-        font-size: 1.1rem;
+        font-size: 1rem;
         padding: 1rem 1.5rem;
         border: 1px solid white;
         border-radius: 10px;

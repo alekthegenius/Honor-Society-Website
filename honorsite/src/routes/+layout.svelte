@@ -46,7 +46,7 @@
 	<link rel="apple-touch-icon" sizes="180x180" href="{favicon}">
 	<link rel="icon" type="image/png" sizes="32x32" href="{favicon32}">
 	<link rel="icon" type="image/png" sizes="16x16" href="{favicon16}">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta name="description" content="Faith Honor Society is a national homeschool honor society that recognizes achievements, encourages scholarship, and empowers leaders among the homeschool community.">
 	<meta name="theme-color" content="#2a2b2a">
 	<link rel="manifest" href="{sitemanifest}">

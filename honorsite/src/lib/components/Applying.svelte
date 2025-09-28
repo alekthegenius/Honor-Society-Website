@@ -169,6 +169,16 @@
         .flex-grid-container {
             padding: 1rem;
         }
+
+        .overflow-table-container {
+            -webkit-mask-image: linear-gradient(to right, black 80%, transparent);
+            mask-image: linear-gradient(to right, black 80%, transparent);
+            mask-repeat: no-repeat;
+        }
+
+        .grid-table {
+            margin-right: 40%;
+        }
     }
 
 
