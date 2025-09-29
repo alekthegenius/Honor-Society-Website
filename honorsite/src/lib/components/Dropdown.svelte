@@ -24,8 +24,6 @@
         <a class="dropdown-menu-item" href="/photos">See Our Favorite Pics</a>
     {/if}
 
-
-
 </div>
 
 

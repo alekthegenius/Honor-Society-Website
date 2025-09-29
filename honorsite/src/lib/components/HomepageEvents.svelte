@@ -1,13 +1,13 @@
 <script lang="ts">
     import EventCard from "$lib/components/EventCard.svelte";
-
+    import EventBackground from "$lib/assets/background-72250_1920.jpg";
     let { events = [] } = $props();
     console.log(events);
 </script>
 
 <div class="events">
     
-    <div class="events-content">
+    <div class="events-content" style="background-image: url({EventBackground});">
         <h1>Upcoming Events</h1>
 
         {#each events as event }
@@ -27,7 +27,6 @@
 
     .events-content {
         margin-top: 1rem;
-        background-image: url("$lib/assets/background-72250_1920.jpg");
         background-position: right top;
         background-size: cover;
         background-repeat: no-repeat;

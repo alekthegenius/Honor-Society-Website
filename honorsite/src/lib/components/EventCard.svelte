@@ -2,17 +2,31 @@
     let { event = {}, clickable=true } = $props();
     let datetime = new Date(event.datetime);
 
-    // Extract formatted date and time
-    let date = datetime.toLocaleDateString([], {
-        year: "numeric",
-        month: "long",
-        day: "numeric"
-    });
+    let date: String = $state("");
+    let time: String = $state("");
 
-    let time = datetime.toLocaleTimeString([], {
-        hour: "2-digit",
-        minute: "2-digit"
-    });
+    let noDate: Boolean = $state(false);
+
+    if (isNaN(datetime.getTime())) {
+        date = event.datetime;
+        time = ""
+        noDate = true;
+    } else {
+        // Extract formatted date and time
+        noDate = false;
+        date = datetime.toLocaleDateString([], {
+            year: "numeric",
+            month: "long",
+            day: "numeric"
+        });
+
+        time = datetime.toLocaleTimeString([], {
+            hour: "2-digit",
+            minute: "2-digit"
+        });
+    }
+
+   
 
 
 
@@ -21,12 +35,16 @@
 {#if clickable}
 <a href="/events" class="events" >
     
-    <div class="events-content">
+    <div class={noDate ? "events-content nodate" : "events-content"}>
         <h1>{event.title}</h1>
 
         <div class="event-subtitle">
+            {#if noDate}
+            <h2 style="text-align: center; width: 100%;">{date}</h2>
+            {:else}
             <h2>{date}</h2>
             <h2>{time}</h2>
+            {/if}
         </div>
 
         <p>{event.body}</p>
@@ -40,12 +58,16 @@
 {:else}
 <div class="events" >
     
-    <div class="events-content">
+    <div class={noDate ? "events-content nodate" : "events-content"}>
         <h1>{event.title}</h1>
 
         <div class="event-subtitle">
+            {#if noDate}
+            <h2 style="text-align: center; width: 100%;">{date}</h2>
+            {:else}
             <h2>{date}</h2>
             <h2>{time}</h2>
+            {/if}
         </div>
 
         <p>{event.body}</p>
@@ -80,6 +102,10 @@
         border-radius: 10px;
         padding: 1.5rem 1rem;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .events-content.nodate {
+        background-color: #e46a42;
     }
 
     .event-subtitle {
@@ -118,12 +144,20 @@
     
 
 
-    p {
+    a p {
         max-width: 100%;
         white-space: nowrap;
         text-align: center;
         overflow: hidden;
         text-overflow: ellipsis;
+        color: #F8F4E3;
+        font-family: 'Times New Roman', Times, serif;
+        margin-top: 1.5rem;
+    }
+
+    div p {
+        max-width: 100%;
+        text-align: center;
         color: #F8F4E3;
         font-family: 'Times New Roman', Times, serif;
         margin-top: 1.5rem;

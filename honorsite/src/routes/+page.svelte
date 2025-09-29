@@ -7,7 +7,6 @@
     import HonorTypes from "$lib/components/HonorTypes.svelte";
     import WhyJoin from "$lib/components/WhyJoin.svelte";
     import Officers from "$lib/components/Officers.svelte";
-    import { Popsicle } from "@lucide/svelte";
 
     let { data } = $props();
 

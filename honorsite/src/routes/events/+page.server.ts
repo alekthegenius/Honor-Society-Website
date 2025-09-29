@@ -24,9 +24,25 @@ export const load: PageServerLoad = async () => {
 
     const now = new Date();
     events.sort((a, b) => {
+        const now = new Date();
+
         const aTime = new Date(a.datetime).getTime();
         const bTime = new Date(b.datetime).getTime();
-        return (bTime - now.getTime()) - (aTime - now.getTime());
+
+        const aValid = !isNaN(aTime);
+        const bValid = !isNaN(bTime);
+
+        // If both invalid → keep order as-is
+        if (!aValid && !bValid) return 0;
+
+        // If only a is invalid → a goes first
+        if (!aValid) return -1;
+
+        // If only b is invalid → b goes first
+        if (!bValid) return 1;
+
+        // If both valid → sort by recency (latest first)
+        return bTime - aTime;
     });
 
     return { events };

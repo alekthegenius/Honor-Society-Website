@@ -21,12 +21,17 @@ export const load: PageServerLoad = async () => {
             body: body
         });
     }
+    
+    events = events.filter(event => {
+        const time = new Date(event.datetime).getTime();
+        return !isNaN(time);
+    });
 
     const now = new Date();
     events.sort((a, b) => {
         const aTime = new Date(a.datetime).getTime();
         const bTime = new Date(b.datetime).getTime();
-        return aTime - now.getTime() - bTime - now.getTime();
+        return Math.abs(aTime - now.getTime()) - Math.abs(bTime - now.getTime());
     });
 
     return { events };

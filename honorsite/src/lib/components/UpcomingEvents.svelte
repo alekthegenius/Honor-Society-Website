@@ -1,4 +1,5 @@
 <script lang="ts">
+    import EventBackground from "$lib/assets/background-72250_1920.jpg";
     import EventCard from "$lib/components/EventCard.svelte";
 
     let { events = [] } = $props();
@@ -7,7 +8,7 @@
 
 <div class="events">
     
-    <div class="events-content">
+    <div class="events-content" style="background-image: url({EventBackground});">
 
         {#each events as event }
             <EventCard event={event} clickable={false}  />
@@ -25,7 +26,6 @@
     }
 
     .events-content {
-        background-image: url("$lib/assets/background-72250_1920.jpg");
         background-position: right top;
         background-size: cover;
         background-repeat: no-repeat;

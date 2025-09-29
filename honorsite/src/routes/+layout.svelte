@@ -11,7 +11,6 @@
 
 	import { Menu, Mouse } from '@lucide/svelte';
 
-	import Dropdown from '$lib/components/Dropdown.svelte';
 
 	let { children } = $props();
 
@@ -31,6 +30,11 @@
 			event.stopPropagation();
 		}
 		dropdownOpen = !dropdownOpen;
+	}
+
+	function closeDropdown() {
+		dropdownOpen = false;
+		dropdownHovered = false;
 	}
 
 
@@ -87,11 +91,32 @@
 
 	{#if !isMobile && (dropdownHovered || dropdownOpen)}
 		<div transition:slide class="dropdown-menu-container" style="position: relative; z-index: 3; display: block;" role="menu" tabindex="0" onmouseenter={() => { dropdownHovered = true; }} onmouseleave={() => { dropdownHovered = false; }}>
-			<Dropdown {isMobile} />
+			<div class="dropdown-menu">
+				<a class="dropdown-menu-item" href="/" onclick={closeDropdown}>Honor Society Home</a>
+				<a class="dropdown-menu-item" href="/apply" onclick={closeDropdown}>Apply Now</a>
+				<a class="dropdown-menu-item" href="/events" onclick={closeDropdown}>View Events</a>
+				<a class="dropdown-menu-item" href="/team" onclick={closeDropdown}>Meet The Team</a>
+				<a class="dropdown-menu-item" href="/photos" onclick={closeDropdown}>See Our Favorite Pics</a>
+
+			</div>
 		</div>
 	{:else if isMobile && dropdownOpen}
 		<div transition:slide class="dropdown-menu-container" style="position: relative; z-index: 3; display: block;">
-			<Dropdown {isMobile} />
+			<div class="dropdown-menu">
+
+				<a class="dropdown-menu-item" href="/" onclick={closeDropdown}>Honor Society Home</a>
+				<a class="dropdown-menu-item" href="/apply" onclick={closeDropdown}>Apply Now</a>
+				<a class="dropdown-menu-item" href="/events" onclick={closeDropdown}>View Events</a>
+				<a class="dropdown-menu-item" href="/team" onclick={closeDropdown}>Meet The Team</a>
+				<a class="dropdown-menu-item" href="/photos" onclick={closeDropdown}>See Our Favorite Pics</a>
+				<div style="height: 2px; background-color: rgba(255, 255, 255, 0.5);"></div>
+				<a class="dropdown-menu-item" href="https://www.faith-homeschool.com/index.htm" onclick={closeDropdown}>FAITH Home</a>
+				<a class="dropdown-menu-item" href="https://www.faith-homeschool.com/join.htm" onclick={closeDropdown}>Join FAITH</a>
+				<a class="dropdown-menu-item" href="https://www.faith-homeschool.com/signup2.htm" onclick={closeDropdown}>Extracurriculars</a>
+				<a class="dropdown-menu-item" href="https://www.faith-homeschool.com/tascs.htm" onclick={closeDropdown}>Teen Volunteers</a>
+				<a class="dropdown-menu-item" href="https://www.faith-homeschool.com/linksnew.htm" onclick={closeDropdown}>Helpful Links</a>
+				
+			</div>
 		</div>
 	{/if}
 	
@@ -166,6 +191,7 @@
 		flex-direction: row;
 		align-items: center;
 		padding: 0 0 0 1.5rem;
+		height: 100%
 	}
 
 	.desktop-urls {
@@ -218,6 +244,37 @@
 		margin-top: 5px;
 	}
 	
+	.dropdown-menu {
+        position: relative;
+        top: 0;
+        left: 0;
+        background-color: #996c24d2;
+        box-shadow: 0 8px 10px rgba(0,0,0,0.2);
+        z-index: 1000;
+        display: flex;
+        flex-direction: column;
+        min-width: 200px;
+    }
+
+    .dropdown-menu-item {
+        text-decoration: none;
+        background: none;
+        border: none;
+        color: #F8F4E3;
+        padding: 12px 16px;
+        text-align: left;
+        width: 100%;
+        cursor: pointer;
+        font-size: 1.2rem;
+        transition: background-color 0.3s, color 0.3s;
+    }
+
+    @media all and (hover: hover) {
+        .dropdown-menu-item:hover {
+            background-color: #F8F4E3;
+            color: #2a2b2e;
+        }
+    }
 
 	@media screen and (max-width: 1030px) {
 		.desktop-urls {
