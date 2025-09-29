@@ -107,13 +107,16 @@
 
     @media screen and (max-width: 635px) {
         .officer-container {
-            padding: 1rem 2rem;
+            padding: 1rem 1rem;
         }
 
 
         .officer-card {
             flex-basis: 250px;
+            font-size: .8rem;
         }
+
+    
     }
 
 </style>
