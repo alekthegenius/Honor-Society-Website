@@ -28,7 +28,7 @@
     </div>
 </div>
 
-<style>
+<style lang="scss">
     .footer {
         display: flex;
         flex-direction: row;

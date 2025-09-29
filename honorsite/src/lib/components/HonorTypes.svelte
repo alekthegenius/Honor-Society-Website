@@ -19,7 +19,7 @@
 </div>
 
 
-<style>
+<style lang="scss">
     h1 {
         display: flex;
         justify-self: center;

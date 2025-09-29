@@ -37,12 +37,13 @@
 </div>
 
 
-<style>
+<style lang="scss">
     .events {
         width: 100%;
         box-sizing: border-box;
         padding: 0;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        
         &:hover {
             cursor: pointer;
         }

@@ -17,7 +17,7 @@
 </div>
 
 
-<style>
+<style lang="scss">
     .events {
         width: 100%;
         box-sizing: border-box;

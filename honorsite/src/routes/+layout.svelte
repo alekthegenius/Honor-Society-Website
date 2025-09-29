@@ -1,8 +1,5 @@
 <script lang="ts">
-	import favicon from '$lib/assets/favicon/apple-touch-icon.png';
-	import favicon32 from '$lib/assets/favicon/favicon-32x32.png';
-	import favicon16 from '$lib/assets/favicon/favicon-16x16.png';
-	import sitemanifest from '$lib/assets/favicon/site.webmanifest';
+	import favicon from '$lib/assets/favicon/favicon.ico'
 	
 	import Footer from '$lib/components/Footer.svelte';
 
@@ -43,13 +40,10 @@
 
 <svelte:head>
 	<title>Faith Honor Society</title>
-	<link rel="apple-touch-icon" sizes="180x180" href="{favicon}">
-	<link rel="icon" type="image/png" sizes="32x32" href="{favicon32}">
-	<link rel="icon" type="image/png" sizes="16x16" href="{favicon16}">
+	<link rel="icon" type="image/x-icon" href={favicon}>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta name="description" content="Faith Honor Society is a national homeschool honor society that recognizes achievements, encourages scholarship, and empowers leaders among the homeschool community.">
 	<meta name="theme-color" content="#2a2b2a">
-	<link rel="manifest" href="{sitemanifest}">
 
 	<link
 		rel="stylesheet"
@@ -108,7 +102,7 @@
 <Footer />
 
 
-<style>
+<style lang="scss">
 
 	:global(*) {
 		box-sizing: border-box;

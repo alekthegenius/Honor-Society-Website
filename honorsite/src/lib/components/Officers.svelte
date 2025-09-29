@@ -23,14 +23,13 @@
 
 
 
-<style>
-    :root {
-        --background-color:rgb(93, 189, 215);
-        --secondary-color: #F8F4E3;
-        --header-style: rgb(76, 250, 183) solid 5px;
-    }
+<style lang="scss">
+    $bg-color:rgb(93, 189, 215);
+    $secondary-color: #F8F4E3;
+    $header-style: rgb(76, 250, 183) solid 5px;
+    
     .officer-section {
-        background-color: var(--background-color);
+        background-color: $bg-color;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -53,8 +52,8 @@
         margin-bottom: 2rem;
         padding: 1rem 2rem;
         background-color: #2A2B2A;
-        border-left: var(--header-style);
-        border-bottom: var(--header-style);
+        border-left: $header-style;
+        border-bottom: $header-style;
     }
 
     h1 {
@@ -74,7 +73,7 @@
         text-align: center;
         width: 25%;
         padding: 0.5rem;
-        border: 1px solid var(--secondary-color);
+        border: 1px solid $secondary-color;
         border-radius: 5px;
         height: 150px;
         margin-bottom: 2rem;
@@ -87,10 +86,10 @@
         padding: 0.5rem 1rem;
         font-family: 'Times New Roman', Times, serif;
         font-size: 1.2rem;
-        color: var(--secondary-color);
-        background-color: var(--background-color);
+        color: $secondary-color;
+        background-color: $bg-color;
         border-radius: 10px;
-        border: 1px solid var(--secondary-color);
+        border: 1px solid $secondary-color;
 
         transition: background-color 0.25s, color 0.25s, border 0.25s;
 
@@ -99,15 +98,15 @@
 
     @media screen and (hover: hover) {
         .officer-card:hover {
-            background-color: var(--secondary-color);
-            color: var(--background-color);
-            border: 1px solid var(--background-color);
+            background-color: $secondary-color;
+            color: $bg-color;
+            border: 1px solid $bg-color;
         }
 
         a:hover {
-            background-color: var(--secondary-color);
-            color: var(--background-color);
-            border: 1px solid var(--background-color);
+            background-color: $secondary-color;
+            color: $bg-color;
+            border: 1px solid $bg-color;
         }
     }
 

@@ -13,7 +13,7 @@
     </ul>
 </div>
 
-<style>
+<style lang="scss">
     h1 {
         padding: 1rem 2rem;
         background-color: #2A2B2A;

@@ -28,6 +28,7 @@
 <div class="flex-grid-container">
     <h1>Membership Requirements</h1>
     
+    
     <div class="overflow-table-container">
         <div class="grid-table">
             <GradeTable />
@@ -37,7 +38,7 @@
 
 
 
-<style>
+<style lang="scss">
     .flex-grid-container {
         width: 100%;
         display: flex;
@@ -131,7 +132,7 @@
 
     .grid-table {
         height: 100%;
-        min-width: 800px;
+        min-width: 600px;
     }
 
 
@@ -165,20 +166,12 @@
         }
     }
 
-    @media screen and (max-width: 865px) {
+    @media screen and (max-width: 665px) {
         .flex-grid-container {
             padding: 1rem;
         }
 
-        .overflow-table-container {
-            -webkit-mask-image: linear-gradient(to right, black 80%, transparent);
-            mask-image: linear-gradient(to right, black 80%, transparent);
-            mask-repeat: no-repeat;
-        }
 
-        .grid-table {
-            margin-right: 40%;
-        }
     }
 
 
