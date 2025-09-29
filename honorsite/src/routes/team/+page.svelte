@@ -105,4 +105,15 @@
         height: auto;
     }
 
+    @media screen and (max-width: 635px) {
+        .officer-container {
+            padding: 1rem 2rem;
+        }
+
+
+        .officer-card {
+            flex-basis: 250px;
+        }
+    }
+
 </style>
