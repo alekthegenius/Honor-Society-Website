@@ -26,7 +26,7 @@ export const load: PageServerLoad = async () => {
     events.sort((a, b) => {
         const aTime = new Date(a.datetime).getTime();
         const bTime = new Date(b.datetime).getTime();
-        return aTime - now.getTime() - bTime - now.getTime();
+        return (bTime - now.getTime()) - (aTime - now.getTime());
     });
 
     return { events };

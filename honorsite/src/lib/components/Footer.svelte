@@ -4,9 +4,14 @@
     import { faFacebook } from '@fortawesome/free-brands-svg-icons'
     import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
+    import ContactForm from "$lib/components/ContactForm.svelte";
+
 </script>
 
+<ContactForm />
+
 <div class="footer">
+
     <div>
         <h1>Contact</h1>
         <div class="contact-container">
@@ -26,6 +31,8 @@
 
         <p>FAITH is a Christian home school support group made up of families from New Braunfels, Canyon Lake, Seguin, San Marcos, and Schertz.</p>
     </div>
+
+    
 </div>
 
 <style lang="scss">

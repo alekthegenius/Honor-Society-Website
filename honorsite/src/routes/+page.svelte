@@ -7,11 +7,11 @@
     import HonorTypes from "$lib/components/HonorTypes.svelte";
     import WhyJoin from "$lib/components/WhyJoin.svelte";
     import Officers from "$lib/components/Officers.svelte";
+    import { Popsicle } from "@lucide/svelte";
 
-    export let data;
-    const { events } = data;
+    let { data } = $props();
 
-    let shortenedEvents = events.slice(0, 2);
+    let shortenedEvents = data.events.slice(0, 2);
 </script>
 
 
@@ -27,7 +27,7 @@
 
 		<div class="top-section-second-section">
 			<a href="/apply" class="top-section-join-button">Apply Now</a>
-            <a href="/events" class="top-section-join-button">View Group Events</a>
+            <a href="/events" class="top-section-join-button">View Events</a>
             <a href="/team" class="top-section-join-button">Meet the Officers</a>
 		</div>
 	</div>

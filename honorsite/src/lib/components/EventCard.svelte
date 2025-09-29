@@ -1,7 +1,6 @@
 <script lang="ts">
-    let { event = {} } = $props();
-
-     let datetime = new Date(event.datetime);
+    let { event = {}, clickable=true } = $props();
+    let datetime = new Date(event.datetime);
 
     // Extract formatted date and time
     let date = datetime.toLocaleDateString([], {
@@ -15,9 +14,31 @@
         minute: "2-digit"
     });
 
+
+
 </script>
 
-<div class="events">
+{#if clickable}
+<a href="/events" class="events" >
+    
+    <div class="events-content">
+        <h1>{event.title}</h1>
+
+        <div class="event-subtitle">
+            <h2>{date}</h2>
+            <h2>{time}</h2>
+        </div>
+
+        <p>{event.body}</p>
+        <div class="event-location">
+            <h3>{event.location}</h3>
+        </div>
+
+        
+    </div>
+</a>
+{:else}
+<div class="events" >
     
     <div class="events-content">
         <h1>{event.title}</h1>
@@ -35,6 +56,8 @@
         
     </div>
 </div>
+{/if}
+
 
 
 <style lang="scss">
@@ -43,11 +66,10 @@
         box-sizing: border-box;
         padding: 0;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        
-        &:hover {
-            cursor: pointer;
-        }
+        text-decoration: none;
     }
+
+    
 
     .events-content {
         display: flex;

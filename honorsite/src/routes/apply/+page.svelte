@@ -1,6 +1,6 @@
 <script lang="ts">
     import Applying from "$lib/components/Applying.svelte";
-    import ApplyContactForm from "$lib/components/ApplyContactForm.svelte";
+
 
 </script>
 
@@ -10,9 +10,12 @@
     </h1>
 </div>
 
-<ApplyContactForm />
+
 
 <Applying />
+
+
+
 
 <style lang="scss">
     $apply-background-color: #FF8F66;
@@ -29,4 +32,5 @@
         margin: 0;
         padding: 1rem;
     }
+
 </style>

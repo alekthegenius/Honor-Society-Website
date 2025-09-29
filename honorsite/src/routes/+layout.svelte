@@ -86,13 +86,13 @@
 	</div>
 
 	{#if !isMobile && (dropdownHovered || dropdownOpen)}
-	<div transition:slide class="dropdown-menu-container" style="position: relative; z-index: 3; display: block;" role="menu" tabindex="0" onmouseenter={() => { dropdownHovered = true; }} onmouseleave={() => { dropdownHovered = false; }}>
-		<Dropdown {isMobile} />
-	</div>
+		<div transition:slide class="dropdown-menu-container" style="position: relative; z-index: 3; display: block;" role="menu" tabindex="0" onmouseenter={() => { dropdownHovered = true; }} onmouseleave={() => { dropdownHovered = false; }}>
+			<Dropdown {isMobile} />
+		</div>
 	{:else if isMobile && dropdownOpen}
 		<div transition:slide class="dropdown-menu-container" style="position: relative; z-index: 3; display: block;">
-		<Dropdown {isMobile} />
-	</div>
+			<Dropdown {isMobile} />
+		</div>
 	{/if}
 	
 </header>
