@@ -37,7 +37,7 @@
 		dropdownHovered = false;
 	}
 
-
+  import { resolve } from '$app/paths';
 	
 </script>
 
@@ -57,7 +57,7 @@
 
 <header style="box-shadow: {dropdownOpen ? 'none' : '0 5px 5px rgba(0, 0, 0, 0.326)'};">
 	<div class="header-inner">
-		<a href="/" class="header-logo" style="text-decoration: none;">
+		<a href="{resolve('/')}" class="header-logo" style="text-decoration: none;">
 			<enhanced:img class="logo" src="{logo}" alt="Faith Honor Society Logo" />
 			<h1 class="regular-title">Faith Honor Society</h1>
 			<h1 class="minimized-title">FHS</h1>
@@ -92,11 +92,11 @@
 	{#if !isMobile && (dropdownHovered || dropdownOpen)}
 		<div transition:slide class="dropdown-menu-container" style="position: relative; z-index: 3; display: block;" role="menu" tabindex="0" onmouseenter={() => { dropdownHovered = true; }} onmouseleave={() => { dropdownHovered = false; }}>
 			<div class="dropdown-menu">
-				<a class="dropdown-menu-item" href="/" onclick={closeDropdown}>Honor Society Home</a>
-				<a class="dropdown-menu-item" href="/apply" onclick={closeDropdown}>Apply Now</a>
-				<a class="dropdown-menu-item" href="/events" onclick={closeDropdown}>View Events</a>
-				<a class="dropdown-menu-item" href="/team" onclick={closeDropdown}>Meet The Team</a>
-				<a class="dropdown-menu-item" href="/photos" onclick={closeDropdown}>See Our Favorite Pics</a>
+				<a class="dropdown-menu-item" href="{resolve('/')}" onclick={closeDropdown}>Honor Society Home</a>
+				<a class="dropdown-menu-item" href="{resolve('/apply')}" onclick={closeDropdown}>Apply Now</a>
+				<a class="dropdown-menu-item" href="{resolve('/events')}" onclick={closeDropdown}>View Events</a>
+				<a class="dropdown-menu-item" href="{resolve('/team')}" onclick={closeDropdown}>Meet The Team</a>
+				<a class="dropdown-menu-item" href="{resolve('/photos')}" onclick={closeDropdown}>See Our Favorite Pics</a>
 
 			</div>
 		</div>
@@ -104,11 +104,11 @@
 		<div transition:slide class="dropdown-menu-container" style="position: relative; z-index: 3; display: block;">
 			<div class="dropdown-menu">
 
-				<a class="dropdown-menu-item" href="/" onclick={closeDropdown}>Honor Society Home</a>
-				<a class="dropdown-menu-item" href="/apply" onclick={closeDropdown}>Apply Now</a>
-				<a class="dropdown-menu-item" href="/events" onclick={closeDropdown}>View Events</a>
-				<a class="dropdown-menu-item" href="/team" onclick={closeDropdown}>Meet The Team</a>
-				<a class="dropdown-menu-item" href="/photos" onclick={closeDropdown}>See Our Favorite Pics</a>
+				<a class="dropdown-menu-item" href="{resolve('/')}" onclick={closeDropdown}>Honor Society Home</a>
+				<a class="dropdown-menu-item" href="{resolve('/apply')}" onclick={closeDropdown}>Apply Now</a>
+				<a class="dropdown-menu-item" href="{resolve('/events')}" onclick={closeDropdown}>View Events</a>
+				<a class="dropdown-menu-item" href="{resolve('/team')}" onclick={closeDropdown}>Meet The Team</a>
+				<a class="dropdown-menu-item" href="{resolve('/photos')}" onclick={closeDropdown}>See Our Favorite Pics</a>
 				<div style="height: 2px; background-color: rgba(255, 255, 255, 0.5);"></div>
 				<a class="dropdown-menu-item" href="https://www.faith-homeschool.com/index.htm" onclick={closeDropdown}>FAITH Home</a>
 				<a class="dropdown-menu-item" href="https://www.faith-homeschool.com/join.htm" onclick={closeDropdown}>Join FAITH</a>

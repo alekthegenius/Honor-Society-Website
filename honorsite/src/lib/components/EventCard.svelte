@@ -26,14 +26,14 @@
         });
     }
 
-   
+     import { resolve } from '$app/paths';
 
 
 
 </script>
 
 {#if clickable}
-<a href="/events" class="events" >
+<a href="{resolve('/events')}" class="events" >
     
     <div class={noDate ? "events-content nodate" : "events-content"}>
         <h1>{event.title}</h1>

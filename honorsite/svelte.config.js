@@ -1,5 +1,6 @@
 import adapter from '@sveltejs/adapter-static';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
+import { NIL } from 'uuid';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -16,10 +17,13 @@ const config = {
 			// these options are set automatically — see below
 			pages: 'build',
 			assets: 'build',
-			fallback: 'index.html',
+			fallback: undefined,
 			precompress: false,
 			strict: true
-		})
+		}),
+		paths: {
+			base: '/honors'
+		}
 	}
 };
 

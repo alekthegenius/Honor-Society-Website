@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { page } from '$app/state';
+    import { resolve } from '$app/paths';
 </script>
 
 <div class="error-container">
@@ -8,7 +9,7 @@
         Hmm... Well that didn't work. Send me a message and I'll fix the issue.
     </h2>
 
-    <a href="/">Return Home</a>
+    <a href="{resolve('/')}">Return Home</a>
 </div>
 
 <style lang="scss">

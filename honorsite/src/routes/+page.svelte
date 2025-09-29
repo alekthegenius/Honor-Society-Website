@@ -11,6 +11,8 @@
     let { data } = $props();
 
     let shortenedEvents = data.events.slice(0, 2);
+    
+    import { resolve } from '$app/paths';
 </script>
 
 
@@ -25,9 +27,9 @@
 		</div>
 
 		<div class="top-section-second-section">
-			<a href="/apply" class="top-section-join-button">Apply Now</a>
-            <a href="/events" class="top-section-join-button">View Events</a>
-            <a href="/team" class="top-section-join-button">Meet the Officers</a>
+			<a href="{resolve('/apply')}" class="top-section-join-button">Apply Now</a>
+            <a href="{resolve('/events')}" class="top-section-join-button">View Events</a>
+            <a href="{resolve('/team')}" class="top-section-join-button">Meet the Officers</a>
 		</div>
 	</div>
 
