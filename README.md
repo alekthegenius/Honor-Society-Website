@@ -121,7 +121,7 @@ If you want to be able to access that from a different device on your internet o
 npm run dev -- --host
 ``` 
 
-and type whatever the network link is that it gives you.
+and type whatever the network link is into your phones web browser.
 
 **Note: at any point, if you want to end the server, just press `CTRL+C` and it will stop the server.**
 
