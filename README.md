@@ -87,7 +87,7 @@ Now, regardless of whether you choose to open the project in the terminal or VSC
 
 The very first time you open the project, you have to install the project's dependencies. To do that, you can  either use the terminal app or, if you're using VS Code like me, click `View > Terminal` to open a terminal shell directly in the current folder, allowing you to run commands straight from there. *You can also do `WIndows: CTRL + SHIFT + BACKTICK ` or `MACOS: COMMAND + SHIFT + BACKTICK` to open up the terminal super quick.*
 
-Note for WIndows Users: If you on windows, then be sure to create use a Command-Prompt shell and not a Powershell. To open a new Command-Prompt window in VSCode's terminal, click on the downward-facing arrow next to the plus icon in the terminal section on VSCode, and select `Command-Prompt`.
+Note for Windows Users: If you are on Windows, then be sure to use a Command-Prompt shell and not PowerShell. To open a new Command-Prompt window in VSCode's terminal, click on the downward-facing arrow next to the plus icon in the terminal section on VSCode, and select `Command-Prompt`. If it npm is still not wroking but you know you have it installed, just close and reopen VSCode.
 
 The first time you open the project up you have to run `npm install` in the temrinal to install all of the packages the project needs.
 
