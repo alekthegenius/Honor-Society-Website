@@ -155,7 +155,7 @@ To quickly recap, in these sections, you learned how to:
 Remember, all a Svelte file is, is a <script> tag with JavaScript at the top, your HTML code in the middle, and CSS code at the bottom. Now I use TypeScript and SASS, but it's exactly the same.
 
 - Inside of `src/lib/components` are a collection of Svelte files that I import into the pages, like the minimum grade requirements table, etc...
-- Lastly, there's the `+layout.svelte` file, where I have the header, which stays at the top of the website, and has links to go to the Faith website. The `{@render children?.()}` is the spot where each page gets rendered into. Finally, the `+layout.svelte` also has a footer which I imported from my Svelte component folder.
+- Lastly, there's the `+layout.svelte` file, where I have the header, which stays at the top of the website, and has links to go to the Faith website. The `{@render children?.()}` inside of it is the spot where each page gets rendered into so that the final page is the `+page.svelte` and the `+layout.svelte` on top. Finally, the `+layout.svelte` also has a footer which I imported from my Svelte component folder.
 
 Hopefully that all makes sense and you get an idea of how to make changes.
 
