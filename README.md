@@ -95,7 +95,7 @@ The first time you open the project up, you have to run:
 npm install
 ```
 
-In the terminal, install all of the packages the project needs.
+in the command-prompt, which installs all of the packages the project needs.
 
 # Running the Website
 Now that you have your project all set up, you are now ready to either run a development *(testing)* server to see what the website looks like or compile the website to upload to your HostGator server.
