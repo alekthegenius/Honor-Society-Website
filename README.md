@@ -4,6 +4,18 @@ It uses Svelte *(a JS component framework that conveniently combines HTML, CSS, 
 
 *Scroll down to see guide on installing svelte and making changes to the website*
 
+## Acronyms
+- JS: Javascript
+- TS: Typescript (Exactly Javascript - but with the ability to define what a variable is, boolean, number, etc...)
+- CSS: The style language
+- SCSS or SASS: Sassy-CSS (The same as CSS but has the ability to do variables easier using the $ dollar sign.)
+- Svelte: The framework that each .svelte file uses. It allows for adding additional functionality to html, js, and css.
+- SvelteKit: The framework for compiling your web site tor your server. Dont worr about this because NPM takes care of it all for you.
+- Node.js: The javascript engine that runs all of the code for compiling or testing it out.
+- NPM: Basically what PIP is to Python. Its the package manager for Node.js and can also handle compiling the code or testing it out with simple commands that talk to Node.js.
+- VSCode: Visual Studio Code; A code editor (IDE) developed by microsoft.
+  
+
 ## What Is Svelte and Why Did I Choose It?
 Quick Help: [Svelte Docs](https://svelte.dev/docs/svelte/overview)
 
@@ -84,7 +96,7 @@ From there, run `cd honorsite` to enter the folder containing the Svelte project
 ## Setting Project Up
 Now, regardless of whether you choose to open the project in the terminal or VSCode, the terminal is required to finish installing the packages needed to run and compile our Svelte project.
 
-The very first time you open the project, you have to install the project's dependencies. To do that, you can  either use the terminal app or, if you're using VS Code like me, click `View > Terminal` to open a terminal shell directly in the current folder, allowing you to run commands straight from there. *You can also do `WIndows: CTRL + SHIFT + BACKTICK ` or `MACOS: COMMAND + SHIFT + BACKTICK` to open up the terminal super quick.*
+The very first time you open the project, you have to install the project's dependencies. To do that, you can  either use the terminal app or, if you're using VS Code like me, click `View > Terminal` to open a terminal shell directly in the current folder in VSCode, allowing you to run commands straight from there. *You can also do `WIndows: CTRL + SHIFT + BACKTICK ` or `MACOS: COMMAND + SHIFT + BACKTICK` to open up the terminal super quick.*
 
 Note for Windows Users: If you are on Windows, then be sure to use a Command-Prompt shell and not PowerShell. To open a new Command-Prompt window in VSCode's terminal, click on the downward-facing arrow next to the plus icon in the terminal section of VSCode, and select `Command-Prompt`. If NPM is still not working but you know you have it installed, just close and reopen VSCode.
 
