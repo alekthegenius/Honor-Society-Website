@@ -115,7 +115,13 @@ VITE v7.1.5  ready in 371 ms
 ```
 Open the link: http://localhost:5173/honors in your web browser, and you will see a preview of what your website will look like.
 
-If you want to be able to access that from a different device on your internet or, say, your phone, you can run `npm run dev -- --host` and type whatever the network link is that it gives you.
+If you want to be able to access that from a different device on your internet or, say, your phone, you can run 
+
+```bash
+npm run dev -- --host
+``` 
+
+and type whatever the network link is that it gives you.
 
 **Note: at any point, if you want to end the server, just press `CTRL+C` and it will stop the server.**
 
