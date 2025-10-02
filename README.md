@@ -61,23 +61,23 @@ To help you in your coding journey, I first recommend installing the [Official S
 
 Now that we have everything installed, we can now download the actual Svelte project (which is stored in this Github repository a.k.a code folder).
 
-To download the code you can either use the GIT terminal utility, or rather, just click on the big green code button and select `download ZIP`. From there you can unzip the folder titled "Honor-Society-Website" and place it wherever you may please, though I recommend in your Documents folder so the rest of the commands work :)
+To download the code you can either use the GIT terminal utility, or rather, just click on the big green code button and select `download ZIP`. From there you can unzip the folder titled `Honor-Society-Website-main` and place it wherever you may please, though I recommend in your Documents folder so the rest of the commands work :)
 
 ## Opening Project in VSCode
-Once you have everything installed, downloaded, and saved in the Documents folder, let's open the project in VSCode. The easiest way to do that is to open up VSCode, then click the `Open Folder...` (For macos its `Open...`) and select the `honorsite` subfolder inside of the `Honor-Society-Website` you saved as that is the one that contains all of your code.
+Once you have everything installed, downloaded, and saved in the Documents folder, let's open the project in VSCode. The easiest way to do that is to open up VSCode, then click the `Open Folder...` (For macos its `Open...`) and select the `honorsite` subfolder inside of the `Honor-Society-Website-main` you saved as that is the one that contains all of your code.
 
 
 ## Alternative: Opening Project in Terminal
 If you want to make things harder on yourself and not use VSCode...
 
 **Windows:**
-Once you have unzipped and moved the "Honor-Society-Website" to your documents folder, you can now open up the "Command-Line" program, and type in `cd Documents\Honor-Society-Website` (note: don't include the double-quotes). This will change your current directory in the terminal to the "Honor-Society-Website" folder.
+Once you have unzipped and moved the "Honor-Society-Website" to your documents folder, you can now open up the "Command-Line" program, and type in `cd Documents\Honor-Society-Website-main` (note: don't include the double-quotes). This will change your current directory in the terminal to the "Honor-Society-Website" folder.
 
 From there, run `cd honorsite` to enter the folder containing the Svelte project.
 
 
 **Macos**
-Once you have unzipped and moved the "Honor-Society-Website" to your documents folder, you can now open up the "Terminal" app (command+space opens up Spotlight so you can search for it quickly), and from there you can type and run `cd Documents/Honor-Society-Website`. This will change your current directory in the terminal to the "Honor-Society-Website" folder.
+Once you have unzipped and moved the "Honor-Society-Website" to your documents folder, you can now open up the "Terminal" app (command+space opens up Spotlight so you can search for it quickly), and from there you can type and run `cd Documents/Honor-Society-Website-main`. This will change your current directory in the terminal to the "Honor-Society-Website" folder.
 
 From there, run `cd honorsite` to enter the folder containing the Svelte project.
 
