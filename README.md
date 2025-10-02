@@ -17,11 +17,8 @@ Because it is a popular JavaScript framework, there are a lot of plugins for it 
 
 Lastly, Svelte employs conditional statements, such as if/else/each, that can be used within your HTML code to hide or show elements. For example, I have different buttons displayed when the webpage is accessed on a phone rather than a computer.
 
-Now, of course, you can't just give a web browser a .svelte file and expect it to read it. You have to first use SvelteKit, an app framework, to convert it into HTML and JavaScript. Ando so, in the following section we will cover how you can make changes to the files and upload it to your web server.
-
-
 ## Installing and Changing the Website
-In the following section, I will show you a quick guide on how you can download the Svelte project, make your own changes, and upload the code to your web browser.
+Now, of course, you can't just give a web browser a .svelte file and expect it to read it. You have to first use SvelteKit, an app framework, to convert it into HTML and JavaScript. And so in this  section, I will show you a quick guide on how you can download the Svelte project, make your own changes, and upload the code to your web browser.
 
 ### Installing Node.js and NPM
 The first step is to download Node.js and its package manager NPM (the JavaScript engine required for compiling the Svelte code).
