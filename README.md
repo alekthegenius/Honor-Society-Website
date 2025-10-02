@@ -64,7 +64,7 @@ Now that we have everything installed, we can now download the actual Svelte pro
 To download the code you can either use the GIT terminal utility, or rather, just click on the big green code button and select `download ZIP`. From there you can unzip the folder titled "Honor-Society-Website" and place it wherever you may please, though I recommend in your Documents folder so the rest of the commands work :)
 
 ## Opening Project in VSCode
-Once you have everything installed, downloaded, and saved in the Documents folder, let's open the project in VSCode. The easiest way to do that is to open up VSCode, then click the `Open...` and select the `honorsite` subfolder inside of the `Honor-Society-Website` you saved as that is the one that contains all of your code.
+Once you have everything installed, downloaded, and saved in the Documents folder, let's open the project in VSCode. The easiest way to do that is to open up VSCode, then click the `Open Folder...` (For macos its `Open...`) and select the `honorsite` subfolder inside of the `Honor-Society-Website` you saved as that is the one that contains all of your code.
 
 
 ## Alternative: Opening Project in Terminal
