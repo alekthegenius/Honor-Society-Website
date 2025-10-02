@@ -1,6 +1,6 @@
 # Honor Society Website
 A Svelte-based website I created for my honor society.
-It uses Svelte *(a JS component framework that conveniently combines HTML, CSS, and JS into components)* and SvelteKit *(a JS app framework for managing the server and compiling into a static site)*
+It uses Svelte *(a JS component framework that conveniently combines HTML, CSS, and JS into a collection of small files)* and SvelteKit *(a JS app framework for managing the server and compiling into a static site)*
 
 # What Is Svelte and Why Did I Choose It?
 Quick Help: [Svelte Docs](https://svelte.dev/docs/svelte/overview)
