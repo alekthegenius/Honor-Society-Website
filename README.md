@@ -85,7 +85,9 @@ From there, run `cd honorsite` to enter the folder containing the Svelte project
 # Setting Project Up
 Now, regardless of whether you choose to open the project in the terminal or VSCode, the terminal is required to finish installing the packages needed to run and compile our Svelte project.
 
-The very first time you open the project, you have to install the project's dependencies. To do that, you can  type `npm install` either directly into the terminal app or, if you're using VS Code like me, click `View > Terminal` to open a terminal shell directly in the current folder, allowing you to run the command straight from there. *You can also do `WIndows: CTRL + SHIFT + BACKTICK ` or `MACOS: COMMAND + SHIFT + BACKTICK` to open up the terminal super quick.*
+The very first time you open the project, you have to install the project's dependencies. To do that, you can  either use the terminal app or, if you're using VS Code like me, click `View > Terminal` to open a terminal shell directly in the current folder, allowing you to run commands straight from there. *You can also do `WIndows: CTRL + SHIFT + BACKTICK ` or `MACOS: COMMAND + SHIFT + BACKTICK` to open up the terminal super quick.*
+
+The first time you open the project up you have to run `npm install` in the temrinal to install all of the packages the project needs.
 
 # Running the Website
 Now that you have your project all set up, you are now ready to either run a development *(testing)* server to see what the website looks like or compile the website to upload to your HostGator server.
