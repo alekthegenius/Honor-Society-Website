@@ -185,7 +185,7 @@ Note: To create a new page, all you have to do is create a new folder in routes 
 ```
 
 # Web Server Structure
-Here is what your /honors folder on the web server should look like once you compile the project and copy the files from the build folder:
+Here is what your `/honors` folder on the web server should look like once you compile the project and copy the files from the build folder:
 
 ## Default (With trailing slashes set to always):
 
