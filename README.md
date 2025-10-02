@@ -2,19 +2,24 @@
 A Svelte-based website I created for my honor society.
 It uses Svelte *(a JS component framework that conveniently combines HTML, CSS, and JS into components)* and SvelteKit *(a JS app framework for managing the server and compiling into a static site)*
 
-# What Is And Why Did I Choose Svelte?
-[Svelte Docs](https://svelte.dev/docs/svelte/overview)
+# What Is Svelte and Why Did I Choose It?
+Quick Help: [Svelte Docs](https://svelte.dev/docs/svelte/overview)
 
 While you may think Svelte is a programming language, because you save Svelte files in .svelte, Svelte itself is not so much a programming language as a framework for writing HTML, CSS, and JavaScript code simply and quickly.
+
 Svelte uses a component system, where you can import child Svelte files into a parent Svelte file, so as not to make one obscenely long HTML file.
-It also uses special $ dollar sign characters called runes that can do specific tasks. For example, putting your JavaScript variable inside the parentheses of the `$state()` rune makes it so the viewer's webpage is automatically updated when the variable changes.
+
+It also uses special $ dollar sign functions called runes that can do specific tasks. For example, putting your JavaScript variable inside the parentheses of the `$state()` rune makes it so the viewer's webpage is automatically updated when the variable changes.
+
 Because it is a popular JavaScript framework, there are a lot of plugins for it as well. Need a Calendar widget? Boom, there's already one for that. Need an icon pack or animations to spruce up your website? Sveltes has you covered.
+
 Lastly, Svelte employs conditional statements, such as if/else/each, that can be used within your HTML code to hide or show elements. For example, I have different buttons displayed when the webpage is accessed on a phone rather than a computer.
+
 Now, of course, you can't just give a web browser a .svelte file and expect it to read it. You have to first use SvelteKit, an app framework, to convert it into HTML and JavaScript.
-In the following section, I will show how you can download the Svelte project, make your own changes, and upload the code to your web browser.
+
 
 # Installing and Changing the Website
-A quick guide on making changes to the website
+In the following section, I will show you a quick guide on how you can download the Svelte project, make your own changes, and upload the code to your web browser.
 
 ## Installing Node.js and NPM
 The first step is to download Node.js and its package manager NPM (the JavaScript engine required for compiling the Svelte code).
@@ -39,39 +44,41 @@ node -v # Should print "v24.9.0".
 npm -v # Should print "11.6.0".
 ```
 
-## Installing VSCode
+# Using VSCode
+The easiest and quickest method.
+
+### Installing VSCode
 
 Unless you're reading this in your parents' basement on an IBM Thinkpad, you probably don't write your code in a terminal editor like VIM and instead want to use a modern code editor. The one I use and recommend is [VSCode](https://code.visualstudio.com/), which, while it has become more bloated with AI garbage over the years, still makes for a very versatile and powerful editor.
 
 Installing it is similar to installing any other app, so I won't waste time covering the process here; simply download it and follow the installer's prompts.
 
-## Downloading Svelte Project
+### Install Svelte Plugin
+
+To help you in your coding journey, I first recommend installing the [Official Svelte plugin](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode) from the plugin tab in VSCode, as it will definitely save you time when you can't figure out why your code isn't working.
+
+# Downloading Svelte Project
 
 Now that we have everything installed, we can now download the actual Svelte project (which is stored in this Github repository a.k.a code folder).
 
 To download the code you can either use the GIT terminal utility, or rather, just click on the big green code button and select `download ZIP`. From there you can unzip the folder titled "Honor-Society-Website" and place it wherever you may please, though I recommend in your Documents folder so the rest of the commands work :)
 
-# Using VSCode
-The easiest and quickest method.
-
-## Install Svelte Plugin
-
-To help you in your coding journey, I first recommend installing the [Official Svelte plugin](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode) from the plugin tab in VSCode, as it will definitely save you time when you can't figure out why your code isn't working.
-
 ## Opening Project in VSCode
 Once you have everything installed, downloaded, and saved in the Documents folder, let's open the project in VSCode. The easiest way to do that is to open up VSCode, then click the `Open...` and select the `honorsite` subfolder inside of the `Honor-Society-Website` you saved as that is the one that contains all of your code.
 
 
-# Alternative: Opening Project in Terminal
+## Alternative: Opening Project in Terminal
 If you want to make things harder on yourself and not use VSCode...
 
 **Windows:**
 Once you have unzipped and moved the "Honor-Society-Website" to your documents folder, you can now open up the "Command-Line" program, and type in `cd Documents\Honor-Society-Website` (note: don't include the double-quotes). This will change your current directory in the terminal to the "Honor-Society-Website" folder.
+
 From there, run `cd honorsite` to enter the folder containing the Svelte project.
 
 
 **Macos**
 Once you have unzipped and moved the "Honor-Society-Website" to your documents folder, you can now open up the "Terminal" app (command+space opens up Spotlight so you can search for it quickly), and from there you can type and run `cd Documents/Honor-Society-Website`. This will change your current directory in the terminal to the "Honor-Society-Website" folder.
+
 From there, run `cd honorsite` to enter the folder containing the Svelte project.
 
 
@@ -84,6 +91,7 @@ The very first time you open the project, you have to install the project's depe
 Now that you have your project all set up, you are now ready to either run a development *(testing)* server to see what the website looks like or compile the website to upload to your HostGator server.
 
 If you want to test out the website, simply go back to the terminal and run `npm run dev` and click on the link that is then displayed in the terminal
+
 For example, if your terminal looks like this:
 ```
 VITE v7.1.5  ready in 371 ms 
@@ -97,12 +105,12 @@ If you want to be able to access that from a different device on your internet o
 
 # Compiling the website
 Long Explanation of compiling:
-Now, once you have all of the changes you want saved and are ready to upload the website to HostGator, it's time to compile (convert) all of the Svelte code into a static site *computer-readable* HTML and JS, don't ask me how or why it works; it just does! Now, when starting from scratch, you have to specify how you want to build your code, either to be run by a JS web server, or, like us, hosted on a static website hoster like HostGator. Thankfully Svelte makes it real easy to change the way it compiles, and i've already changed the project settings to build static files for each page, under the /honor path on the website. I also turned on trailing slash, which means each page is put into a subfolder and the HTML code is named index.html, meaning you don't have to specify the .html in your URL.
+Now, once you have all of the changes you want saved and are ready to upload the website to HostGator, it's time to compile (convert) all of the Svelte code into a static site *computer-readable* HTML and JS, don't ask me how or why it works; it just does! Now, when starting from scratch, you have to specify how you want to build your code, either to be run by a JS web server, or, like us, hosted on a static website hoster like HostGator. Thankfully Svelte makes it real easy to change the way it compiles, and i've already changed the project settings to build static files for each page, under the /honor path on the website. I also turned on trailing slash, which means that the HTML file for each page is put into a subfolder and the HTML file is called index.html, which has the benefit of you not having to specify the .html in your URL. You simply have to run `npm run build` in your project folder (honorsite) and that will output the files in a `build` folder inside of the honorsite folder.
 
 In case that was too long and you didn't read, *TLDR:* to convert the code into HTML and JavaScript, you simply have to run `npm run build` and that will output the files in a `build` folder inside of the honorsite folder.
 
-I have configured the project to expect to be at `base path` at `/honors`, so the main page would be at https://www.faith-homeschool.com/honors, the photos will be at https://www.faith-homeschool.com/honors/photos, etc...
-In order then to upload it to HostGator you copy the build folder to the root folder on the web server, and rename it to honors. If you would like to learn how to change the `base path`, refer to the section on `svelte.config.js` below.
+I have configured the project to expect to have a `base path` at `/honors`, so the main page would be at https://www.faith-homeschool.com/honors, the photos will be at https://www.faith-homeschool.com/honors/photos, etc...
+In order to upload it to HostGator, you have to copy the newly created `build` folder to the root folder on the web server and rename it to `honors`. If you would like to learn how to change the `base path`, refer to the section on `svelte.config.js` below.
 
 # Wrapping up
 To quickly recap, in these sections, you learned how to:
