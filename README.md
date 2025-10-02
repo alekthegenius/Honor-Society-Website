@@ -15,7 +15,7 @@ Because it is a popular JavaScript framework, there are a lot of plugins for it 
 
 Lastly, Svelte employs conditional statements, such as if/else/each, that can be used within your HTML code to hide or show elements. For example, I have different buttons displayed when the webpage is accessed on a phone rather than a computer.
 
-Now, of course, you can't just give a web browser a .svelte file and expect it to read it. You have to first use SvelteKit, an app framework, to convert it into HTML and JavaScript.
+Now, of course, you can't just give a web browser a .svelte file and expect it to read it. You have to first use SvelteKit, an app framework, to convert it into HTML and JavaScript. Ando so, in the following section we will cover how you can make changes to the files and upload it to your web server.
 
 
 # Installing and Changing the Website
@@ -131,8 +131,9 @@ npm run build
 
 and that will output the files in a `build` folder inside the `honorsite` folder.
 
-I have configured the project to expect to have a `base path` at `/honors`, so the main page would be at https://www.faith-homeschool.com/honors, the photos will be at https://www.faith-homeschool.com/honors/photos, etc...
-In order to upload it to HostGator, you have to copy the files in the newly created `build` folder to a folder named `honors` in the root folder on your web server. If you would like to learn how to change the `base path`, refer to the section on `svelte.config.js` below.
+I have configured the project in `svelte.config.js` to expect to have a `base path` at `/honors`, so the main page would be at https://www.faith-homeschool.com/honors, the photos will be at https://www.faith-homeschool.com/honors/photos, etc...
+
+In order to upload it to HostGator, you have to copy the files in the newly created `build` folder to a folder named `honors` in the root folder on your web server.
 
 # Wrapping up
 To quickly recap, in these sections, you learned how to:
@@ -141,7 +142,6 @@ To quickly recap, in these sections, you learned how to:
 3. Install all of the required libraries by running `npm install`
 4. Previewing the website with `npm run dev`
 5. And finally, uploading the website to your web server by running `npm run build` and saving the contents of the build folder under a folder titled `honors` on your web server.
-6. 
 
 
 # Project File Structure:
