@@ -2,7 +2,9 @@
 A Svelte-based website I created for my honor society.
 It uses Svelte *(a JS component framework that conveniently combines HTML, CSS, and JS into a collection of small files)* and SvelteKit *(a JS app framework for managing the server and compiling into a static site)*
 
-# What Is Svelte and Why Did I Choose It?
+*Scroll down to see guide on installing svelte and making changes to the website*
+
+## What Is Svelte and Why Did I Choose It?
 Quick Help: [Svelte Docs](https://svelte.dev/docs/svelte/overview)
 
 While you may think Svelte is a programming language, because you save Svelte files in .svelte, Svelte itself is not so much a programming language as a framework for writing HTML, CSS, and JavaScript code simply and quickly.
@@ -18,10 +20,10 @@ Lastly, Svelte employs conditional statements, such as if/else/each, that can be
 Now, of course, you can't just give a web browser a .svelte file and expect it to read it. You have to first use SvelteKit, an app framework, to convert it into HTML and JavaScript. Ando so, in the following section we will cover how you can make changes to the files and upload it to your web server.
 
 
-# Installing and Changing the Website
+## Installing and Changing the Website
 In the following section, I will show you a quick guide on how you can download the Svelte project, make your own changes, and upload the code to your web browser.
 
-## Installing Node.js and NPM
+### Installing Node.js and NPM
 The first step is to download Node.js and its package manager NPM (the JavaScript engine required for compiling the Svelte code).
 
 **Windows:**
@@ -44,7 +46,7 @@ node -v # Should print "v24.9.0".
 npm -v # Should print "11.6.0".
 ```
 
-# Using VSCode
+## Using VSCode
 The easiest and quickest method.
 
 ### Installing VSCode
@@ -57,13 +59,13 @@ Installing it is similar to installing any other app, so I won't waste time cove
 
 To help you in your coding journey, I first recommend installing the [Official Svelte plugin](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode) from the plugin tab in VSCode, as it will definitely save you time when you can't figure out why your code isn't working.
 
-# Downloading Svelte Project
+## Downloading Svelte Project
 
 Now that we have everything installed, we can download the actual Svelte project (which is stored in this GitHub repository, a.k.a code folder).
 
 To download the code, you can either use the GIT terminal utility or, rather, just click on the big green code button and select `download ZIP`. From there, you can unzip the folder titled `Honor-Society-Website-main` and place it wherever you may please, though I recommend in your Documents folder so the rest of the commands work :)
 
-## Opening Project in VSCode
+### Opening Project in VSCode
 Once you have everything installed, downloaded, and saved in the Documents folder, let's open the project in VSCode. The easiest way to do that is to open up VSCode, then click the `Open Folder...` (For macOS it's `Open...`) and select the `honorsite` subfolder inside of the `Honor-Society-Website-main` you saved, as that is the one that contains all of your code.
 
 
@@ -82,7 +84,7 @@ Once you have unzipped and moved the "Honor-Society-Website" to your documents f
 From there, run `cd honorsite` to enter the folder containing the Svelte project.
 
 
-# Setting Project Up
+## Setting Project Up
 Now, regardless of whether you choose to open the project in the terminal or VSCode, the terminal is required to finish installing the packages needed to run and compile our Svelte project.
 
 The very first time you open the project, you have to install the project's dependencies. To do that, you can  either use the terminal app or, if you're using VS Code like me, click `View > Terminal` to open a terminal shell directly in the current folder, allowing you to run commands straight from there. *You can also do `WIndows: CTRL + SHIFT + BACKTICK ` or `MACOS: COMMAND + SHIFT + BACKTICK` to open up the terminal super quick.*
@@ -97,7 +99,7 @@ npm install
 
 in the command-prompt, which installs all of the packages the project needs.
 
-# Running the Website
+## Running the Website
 Now that you have your project all set up, you are now ready to either run a development *(testing)* server to see what the website looks like or compile the website to upload to your HostGator server.
 
 If you want to test out the website, simply go back to the terminal and run:
@@ -125,7 +127,7 @@ and type whatever the network link is into your phones web browser.
 
 **Note: at any point, if you want to end the server, just press `CTRL+C` and it will stop the server.**
 
-# Compiling the website
+## Compiling the website
 Long Explanation of compiling:
 Now, once you have all of the changes you want saved and are ready to upload the website to HostGator, it's time to compile (convert) all of the Svelte code into a static site *computer-readable* HTML and JS, don't ask me how or why it works; it just does! Now, when starting from scratch, you have to specify how you want to build your code, either to be run by a JS web server or, like us, hosted on a static website hoster like HostGator. Thankfully, Svelte makes it really easy to change the way it compiles, and I've already changed the project settings to build static files for each page, under the /honor path on the website. I also turned on trailing slash, which means that the HTML file for each page is put into a subfolder, and the HTML file is called index.html, which has the benefit of you not having to specify the .html in your URL. You simply have to run `npm run build` in your project folder (honorsite), and that will output the files in a `build` folder inside the honorsite folder.
 
@@ -190,10 +192,10 @@ Here is a list of the files and an explanation of their purpose.
 Note: To create a new page, all you have to do is create a new folder in routes and add a +page.svelte file inside of it.
 ```
 
-# Web Server Structure
+## Web Server Structure
 Here is what your `/honors` folder on the web server should look like once you compile the project and copy the files from the build folder:
 
-## Default (With trailing slashes set to always):
+### Default (With trailing slashes set to always):
 
 ```yaml
 -- honors        <- Main Folder
@@ -211,7 +213,7 @@ Here is what your `/honors` folder on the web server should look like once you c
 ```
 
 
-## With trailing slashes set to never:
+### With trailing slashes set to never:
 
 ```yaml
 -- honors        <- Main Folder
