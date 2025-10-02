@@ -141,5 +141,83 @@ To quickly recap, in these sections, you learned how to:
 3. Install all of the required libraries by running `npm install`
 4. Previewing the website with `npm run dev`
 5. And finally, uploading the website to your web server by running `npm run build` and saving the contents of the build folder under a folder titled `honors` on your web server.
+6. 
 
 
+# Project File Structure:
+Here is a list of the files and an explanation on their purpose.
+```
+-- Honor-Society-Website      <- Main Folder
+  -- READNE.md                <- This Markdown File Your Reading
+  -- LICENSE                  <- Project's License
+  -- honorsite                <- Project Folder
+      -- README.md                <- Project Description
+      -- package.json             <- List of dependencies for this project that are installed by "npm install"
+      -- package-lock.json        <- An auto-generated list of the dependencies installed and their exact version.
+      -- svelte.config.js         <- Main project settings file. Here is where you can change settings such as, how you want to compile your code, what your base URL is, etc...
+      -- tsconfig.json            <- Secondary project file for the Typescript programming language, you can ignore it.
+      -- vite.config.ts           <- Secondary project settings file. Mainly used to import plugins, not anything you need to worry about.
+      -- node_modules             <- Auto-generated folder containing the plugins used by Svelte
+      -- static                   <- Folder for putting things you want to be served on your website. Traditionally, images and media would go here, but Svelte uses the Assets folder for that.
+      -- src                      <- Folder containing all of the projects code
+          -- app.html                 <- The Main HTML Page where all of the Svelte components are rendered. For the most part, leave this alone.
+          -- app.d.ts                 <- The Main Typescript Types file, where you can list what your types for functions and stuff are. You can leave this alone.
+          -- types                    <- Folder containing module-specific types
+              -- event-calender__core.d.ts  <- Telling typescript what kind of type the event-calender is, though since i dont use it I need to delete it.
+              -- fortawesome-free-brand-svg-icons.d.ts, fortawesome-free-solid-svg-icons.d.ts <- Declaring the modules as type module.
+          -- lib                  <- Folder containing the assets and components used by each page.
+              -- index.ts              <- File containing instructions on how to use this folder.
+              -- assets                <- Folder containing all of the project's assets that are imported by each Svelte file.
+              -- components            <- Folder containing a collection of small Svelte scripts known as components that serve basic functions, like displaying an event, which are imported by the Page files.
+              -- events                <- Folder containing markdown files for each event that you want to be on the website. I have a script that goes through each markdown file in this folder, gets the title, date, time, and location, and displays it as a JavaScript array.
+          -- routes               <- This is where the real magic happens. This contains the main layout file (+layout.svelte), each svelte file (+page.svelte) for every page, as well as typescript (javascript) files for each page (+page.server.ts).
+              -- +error.svelte         <- A page that is shown when using server-side rendering and the server runs into an error, or a page can't be displayed.
+              -- +layout.svelte        <- This is what gets directly rendered by the app.html file. This includes the header, footer, and every sub-page gets rendered through this.
+              -- +layout.ts            <- This file contains settings for how the website should get rendered. Like should it use trailing slashs, etc...
+              -- +page.svelte          <- This is the main page that appears when you go to /honors/
+              -- +page.server.ts       <- This is the server code for the main page. All it does is go through the markdown files in the events folder and return a list of events to be displayed on the main page.
+              -- apply/+page.svelte    <- The Svelte page that is displayed at /honors/apply
+              -- events/+page.svelte   <- The Svelte page that is displayed at /honors/events
+              -- photos/+page.svelte   <- The Svelte page that is displayed at /honors/photos
+              -- team/+page.svelte     <- The Svelte page that is displayed at /honors/team
+
+Note: To create a new page, all you have to do is create a new folder in routes, and add a +page.svelte file inside of it.
+```
+
+# Web Server Structure
+Here is what your /honors folder on the web server shoudl look like once you compile the project and copy the files from the build folder:
+
+## Default (With trailing slashes set to always):
+
+```
+-- honors        <- Main Folder
+  -- index.html        <- The main page html file.
+  -- robots.txt        <- The list of pages that are allowed to be scraped by robots
+  -- data.json        <- Extra data used by the javascript files 
+  -- _app        <- Contains the backbone of the website
+      -- env.js        <- Build Settings
+      -- Version.json  <- Contains the random idenfitfier of the build
+      -- immutables    <- A collection of all of the random javascript files, images, and resources that is then displayed by the each html file.
+  -- apply/index.html     <- The index.html for the apply page
+  -- events/index.html    <- The index.html for the events page
+  -- photos/index.html    <- The photos.html for the apply page
+  -- team/index.html      <- The index.html for the team page
+```
+
+
+## With trailing slashes set to never:
+
+```
+-- honors        <- Main Folder
+  -- index.html        <- The main page html file.
+  -- robots.txt        <- The list of pages that are allowed to be scraped by robots
+  -- data.json        <- Extra data used by the javascript files 
+  -- _app        <- Contains the backbone of the website
+      -- env.js        <- Build Settings
+      -- Version.json  <- Contains the random idenfitfier of the build
+      -- immutables    <- A collection of all of the random javascript files, images, and resources that is then displayed by the each html file.
+  -- apply.html     <- The html file for the apply page
+  -- events.html    <- The html file for the events page
+  -- photos.html    <- The html file for the apply page
+  -- team.html      <- The html file for the team page
+```
