@@ -89,12 +89,16 @@ The very first time you open the project, you have to install the project's depe
 
 Note for Windows Users: If you are on Windows, then be sure to use a Command-Prompt shell and not PowerShell. To open a new Command-Prompt window in VSCode's terminal, click on the downward-facing arrow next to the plus icon in the terminal section on VSCode, and select `Command-Prompt`. If it npm is still not wroking but you know you have it installed, just close and reopen VSCode.
 
-The first time you open the project up you have to run `npm install` in the temrinal to install all of the packages the project needs.
+The first time you open the project up you have to run:
+```npm install```
+In the terminal to install all of the packages the project needs.
 
 # Running the Website
 Now that you have your project all set up, you are now ready to either run a development *(testing)* server to see what the website looks like or compile the website to upload to your HostGator server.
 
-If you want to test out the website, simply go back to the terminal and run `npm run dev` and click on the link that is then displayed in the terminal
+If you want to test out the website, simply go back to the terminal and run:
+```npm run dev```
+and click on the link that is then displayed in the terminal
 
 For example, if your terminal looks like this:
 ```
@@ -109,9 +113,11 @@ If you want to be able to access that from a different device on your internet o
 
 # Compiling the website
 Long Explanation of compiling:
-Now, once you have all of the changes you want saved and are ready to upload the website to HostGator, it's time to compile (convert) all of the Svelte code into a static site *computer-readable* HTML and JS, don't ask me how or why it works; it just does! Now, when starting from scratch, you have to specify how you want to build your code, either to be run by a JS web server, or, like us, hosted on a static website hoster like HostGator. Thankfully Svelte makes it real easy to change the way it compiles, and i've already changed the project settings to build static files for each page, under the /honor path on the website. I also turned on trailing slash, which means that the HTML file for each page is put into a subfolder and the HTML file is called index.html, which has the benefit of you not having to specify the .html in your URL. You simply have to run `npm run build` in your project folder (honorsite) and that will output the files in a `build` folder inside of the honorsite folder.
+Now, once you have all of the changes you want saved and are ready to upload the website to HostGator, it's time to compile (convert) all of the Svelte code into a static site *computer-readable* HTML and JS, don't ask me how or why it works; it just does! Now, when starting from scratch, you have to specify how you want to build your code, either to be run by a JS web server, or, like us, hosted on a static website hoster like HostGator. Thankfully Svelte makes it real easy to change the way it compiles, and i've already changed the project settings to build static files for each page, under the /honor path on the website. I also turned on trailing slash, which means that the HTML file for each page is put into a subfolder, and the HTML file is called index.html, which has the benefit of you not having to specify the .html in your URL. You simply have to run `npm run build` in your project folder (honorsite), and that will output the files in a `build` folder inside the honorsite folder.
 
-In case that was too long and you didn't read, *TLDR:* to convert the code into HTML and JavaScript, you simply have to run `npm run build` and that will output the files in a `build` folder inside of the honorsite folder.
+In case that was too long and you didn't read, *TLDR:* to convert the code into HTML and JavaScript, you simply have to run:
+```npm run build```
+and that will output the files in a `build` folder inside the `honorsite` folder.
 
 I have configured the project to expect to have a `base path` at `/honors`, so the main page would be at https://www.faith-homeschool.com/honors, the photos will be at https://www.faith-homeschool.com/honors/photos, etc...
 In order to upload it to HostGator, you have to copy the files in the newly created `build` folder to a folder named `honors` in the root folder on your web server. If you would like to learn how to change the `base path`, refer to the section on `svelte.config.js` below.
