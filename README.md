@@ -10,7 +10,7 @@ It uses Svelte *(a JS component framework that conveniently combines HTML, CSS, 
 - CSS: The style language
 - SCSS or SASS: Sassy-CSS (The same as CSS but has the ability to do variables easier using the $ dollar sign.)
 - Svelte: The framework that each .svelte file uses. It allows for adding additional functionality to html, js, and css.
-- SvelteKit: The framework for compiling your web site tor your server. Dont worr about this because NPM takes care of it all for you.
+- SvelteKit: The framework for compiling your web site tor your server. Dont worry about this because NPM takes care of it all for you.
 - Node.js: The javascript engine that runs all of the code for compiling or testing it out.
 - NPM: Basically what PIP is to Python. Its the package manager for Node.js and can also handle compiling the code or testing it out with simple commands that talk to Node.js.
 - VSCode: Visual Studio Code; A code editor (IDE) developed by microsoft.
