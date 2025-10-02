@@ -176,24 +176,35 @@ Here is a list of the files and an explanation of their purpose.
           -- lib                  <- Folder containing the assets and components used by each page.
               -- index.ts              <- File containing instructions on how to use this folder.
               -- assets                <- Folder containing all of the project's assets that are imported by each Svelte file.
-              -- components            <- Folder containing a collection of small Svelte scripts known as components that serve basic functions, like displaying an event, which are imported by the Page files.
+              -- components            <- Folder containing a collection of small Svelte files that you can think of as HTML elements, like the pink event card, which are imported by the Page files.
               -- events                <- Folder containing markdown files for each event that you want to be on the website. I have a script that goes through each markdown file in this folder, gets the title, date, time, and location, and displays it as a JavaScript array.
-          -- routes               <- This is where the real magic happens. This contains the main layout file (+layout.svelte), each Svelte file (+page.svelte) for every page, as well as TypeScript (JavaScript) files for each page (+page.server.ts).
+          -- routes               <- This is where the real magic happens. This contains the main layout file (+layout.svelte), each Svelte page (+page.svelte), as well as TypeScript (JavaScript) files for each page (+page.server.ts).
               -- +error.svelte         <- A page that is shown when using server-side rendering and the server runs into an error, or a page can't be displayed.
               -- +layout.svelte        <- This is what gets directly rendered by the app.html file. This includes the header, footer, and every sub-page gets rendered through this.
               -- +layout.ts            <- This file contains settings for how the website should be rendered. Like, should it use trailing slashes, etc...
               -- +page.svelte          <- This is the main page that appears when you go to /honors/
               -- +page.server.ts       <- This is the server code for the main page. All it does is go through the markdown files in the events folder and return a list of events to be displayed on the main page.
-              -- apply/+page.svelte    <- The Svelte page that is displayed at /honors/apply
-              -- events/+page.svelte   <- The Svelte page that is displayed at /honors/events
-              -- photos/+page.svelte   <- The Svelte page that is displayed at /honors/photos
-              -- team/+page.svelte     <- The Svelte page that is displayed at /honors/team
+                  -- apply/+page.svelte    <- The Svelte page that is displayed at /honors/apply
+                  -- events/+page.svelte   <- The Svelte page that is displayed at /honors/events
+                  -- photos/+page.svelte   <- The Svelte page that is displayed at /honors/photos
+                  -- team/+page.svelte     <- The Svelte page that is displayed at /honors/team
 
 Note: To create a new page, all you have to do is create a new folder in routes and add a +page.svelte file inside of it.
 ```
 
+## Thats too much stuff, just tell me which files have the website
+
+- Inside the `src/routes` you will see one +page.svelte in each of the sub-folders. That is the Svelte code for each page.
+
+Remember, all a Svelte file is is you have JavaScript at the top, your HTML code in the middle, and CSS code at the bottom. Now I use TypeScript and SASS, but it's exactly the same.
+
+- Inside of `src/lib/components` are a collection of Svelte files that I import into the pages, like the requirements table, etc...
+- Lastly, there's the `+layout.svelte` file, where I have the header, which stays at the top of the website, and has links to go to the Faith website. The `{@render children?.()}` just means it will render each page in the area. Lastly, the `+layout.svelte` also has a footer which I imported from my Svelte component folder.
+
+Hopefully that all makes sense and you get an idea of how to make changes.
+
 ## Web Server Structure
-Here is what your `/honors` folder on the web server should look like once you compile the project and copy the files from the build folder:
+Here is what your `/honors` folder on the web server should look like once you compile the project and copy the files from the `build` folder:
 
 ### Default (With trailing slashes set to always):
 
@@ -229,3 +240,6 @@ Here is what your `/honors` folder on the web server should look like once you c
   -- photos.html    <- The HTML file for the photos page
   -- team.html      <- The HTML file for the team page
 ```
+
+
+
