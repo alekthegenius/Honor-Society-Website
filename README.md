@@ -25,7 +25,7 @@ In the following section, I will show you a quick guide on how you can download 
 The first step is to download Node.js and its package manager NPM (the JavaScript engine required for compiling the Svelte code).
 
 **Windows:**
-Go to [Node.js/Download](https://nodejs.org/en/download/current) and select x64 if your computer was made in the last 10 years and your processor is 64-bit, x86 if your processor is ancient and 32-bit, or Arm 64 if your fancy and your processor is an Arm chip. From there you'll want to download the Windows installer and install it like any standard app. Before moving on, do yourself a quick favor and open up the `Command-Line` app and run the commands `node -v` and `npm -v` to verify that you installed everything correctly.
+Go to [Node.js/Download](https://nodejs.org/en/download/current) and select x64 if your computer was made in the last 10 years and your processor is 64-bit, x86 if your processor is ancient and 32-bit, or Arm 64 if you're fancy and your processor is an Arm chip. From there, you'll want to download the Windows installer and install it like any standard app. Before moving on, do yourself a quick favor and open up the `Command-Line` app and run the commands `node -v` and `npm -v` to verify that you installed everything correctly.
 
 **Macos:**
 On macOS, I recommend the command-line approach to have an easier time. Run the following commands to install Node.js and NPM (the package manager).
@@ -59,12 +59,12 @@ To help you in your coding journey, I first recommend installing the [Official S
 
 # Downloading Svelte Project
 
-Now that we have everything installed, we can now download the actual Svelte project (which is stored in this Github repository a.k.a code folder).
+Now that we have everything installed, we can download the actual Svelte project (which is stored in this GitHub repository, a.k.a code folder).
 
-To download the code you can either use the GIT terminal utility, or rather, just click on the big green code button and select `download ZIP`. From there you can unzip the folder titled `Honor-Society-Website-main` and place it wherever you may please, though I recommend in your Documents folder so the rest of the commands work :)
+To download the code, you can either use the GIT terminal utility or, rather, just click on the big green code button and select `download ZIP`. From there, you can unzip the folder titled `Honor-Society-Website-main` and place it wherever you may please, though I recommend in your Documents folder so the rest of the commands work :)
 
 ## Opening Project in VSCode
-Once you have everything installed, downloaded, and saved in the Documents folder, let's open the project in VSCode. The easiest way to do that is to open up VSCode, then click the `Open Folder...` (For macos its `Open...`) and select the `honorsite` subfolder inside of the `Honor-Society-Website-main` you saved as that is the one that contains all of your code.
+Once you have everything installed, downloaded, and saved in the Documents folder, let's open the project in VSCode. The easiest way to do that is to open up VSCode, then click the `Open Folder...` (For macOS it's `Open...`) and select the `honorsite` subfolder inside of the `Honor-Society-Website-main` you saved, as that is the one that contains all of your code.
 
 
 ## Alternative: Opening Project in Terminal
@@ -87,15 +87,15 @@ Now, regardless of whether you choose to open the project in the terminal or VSC
 
 The very first time you open the project, you have to install the project's dependencies. To do that, you can  either use the terminal app or, if you're using VS Code like me, click `View > Terminal` to open a terminal shell directly in the current folder, allowing you to run commands straight from there. *You can also do `WIndows: CTRL + SHIFT + BACKTICK ` or `MACOS: COMMAND + SHIFT + BACKTICK` to open up the terminal super quick.*
 
-Note for Windows Users: If you are on Windows, then be sure to use a Command-Prompt shell and not PowerShell. To open a new Command-Prompt window in VSCode's terminal, click on the downward-facing arrow next to the plus icon in the terminal section on VSCode, and select `Command-Prompt`. If it npm is still not wroking but you know you have it installed, just close and reopen VSCode.
+Note for Windows Users: If you are on Windows, then be sure to use a Command-Prompt shell and not PowerShell. To open a new Command-Prompt window in VSCode's terminal, click on the downward-facing arrow next to the plus icon in the terminal section of VSCode, and select `Command-Prompt`. If the npm is still not working but you know you have it installed, just close and reopen VSCode.
 
-The first time you open the project up you have to run:
+The first time you open the project up, you have to run:
 
 ```
 npm install
 ```
 
-In the terminal to install all of the packages the project needs.
+In the terminal, install all of the packages the project needs.
 
 # Running the Website
 Now that you have your project all set up, you are now ready to either run a development *(testing)* server to see what the website looks like or compile the website to upload to your HostGator server.
@@ -121,7 +121,7 @@ If you want to be able to access that from a different device on your internet o
 
 # Compiling the website
 Long Explanation of compiling:
-Now, once you have all of the changes you want saved and are ready to upload the website to HostGator, it's time to compile (convert) all of the Svelte code into a static site *computer-readable* HTML and JS, don't ask me how or why it works; it just does! Now, when starting from scratch, you have to specify how you want to build your code, either to be run by a JS web server, or, like us, hosted on a static website hoster like HostGator. Thankfully Svelte makes it real easy to change the way it compiles, and i've already changed the project settings to build static files for each page, under the /honor path on the website. I also turned on trailing slash, which means that the HTML file for each page is put into a subfolder, and the HTML file is called index.html, which has the benefit of you not having to specify the .html in your URL. You simply have to run `npm run build` in your project folder (honorsite), and that will output the files in a `build` folder inside the honorsite folder.
+Now, once you have all of the changes you want saved and are ready to upload the website to HostGator, it's time to compile (convert) all of the Svelte code into a static site *computer-readable* HTML and JS, don't ask me how or why it works; it just does! Now, when starting from scratch, you have to specify how you want to build your code, either to be run by a JS web server or, like us, hosted on a static website hoster like HostGator. Thankfully, Svelte makes it really easy to change the way it compiles, and I've already changed the project settings to build static files for each page, under the /honor path on the website. I also turned on trailing slash, which means that the HTML file for each page is put into a subfolder, and the HTML file is called index.html, which has the benefit of you not having to specify the .html in your URL. You simply have to run `npm run build` in your project folder (honorsite), and that will output the files in a `build` folder inside the honorsite folder.
 
 In case that was too long and you didn't read, *TLDR:* to convert the code into HTML and JavaScript, you simply have to run:
 
@@ -145,21 +145,21 @@ To quickly recap, in these sections, you learned how to:
 
 
 # Project File Structure:
-Here is a list of the files and an explanation on their purpose.
+Here is a list of the files and an explanation of their purpose.
 ```
 -- Honor-Society-Website      <- Main Folder
-  -- READNE.md                <- This Markdown File Your Reading
+  -- READNE.md                <- This Markdown File You're Reading
   -- LICENSE                  <- Project's License
   -- honorsite                <- Project Folder
       -- README.md                <- Project Description
       -- package.json             <- List of dependencies for this project that are installed by "npm install"
       -- package-lock.json        <- An auto-generated list of the dependencies installed and their exact version.
-      -- svelte.config.js         <- Main project settings file. Here is where you can change settings such as, how you want to compile your code, what your base URL is, etc...
-      -- tsconfig.json            <- Secondary project file for the Typescript programming language, you can ignore it.
+      -- svelte.config.js         <- Main project settings file. Here is where you can change settings such as how you want to compile your code, what your base URL is, etc...
+      -- tsconfig.json            <- Secondary project file for the Typescript programming language; you can ignore it.
       -- vite.config.ts           <- Secondary project settings file. Mainly used to import plugins, not anything you need to worry about.
       -- node_modules             <- Auto-generated folder containing the plugins used by Svelte
       -- static                   <- Folder for putting things you want to be served on your website. Traditionally, images and media would go here, but Svelte uses the Assets folder for that.
-      -- src                      <- Folder containing all of the projects code
+      -- src                      <- Folder containing all of the project's code
           -- app.html                 <- The Main HTML Page where all of the Svelte components are rendered. For the most part, leave this alone.
           -- app.d.ts                 <- The Main Typescript Types file, where you can list what your types for functions and stuff are. You can leave this alone.
           -- types                    <- Folder containing module-specific types
@@ -170,10 +170,10 @@ Here is a list of the files and an explanation on their purpose.
               -- assets                <- Folder containing all of the project's assets that are imported by each Svelte file.
               -- components            <- Folder containing a collection of small Svelte scripts known as components that serve basic functions, like displaying an event, which are imported by the Page files.
               -- events                <- Folder containing markdown files for each event that you want to be on the website. I have a script that goes through each markdown file in this folder, gets the title, date, time, and location, and displays it as a JavaScript array.
-          -- routes               <- This is where the real magic happens. This contains the main layout file (+layout.svelte), each svelte file (+page.svelte) for every page, as well as typescript (javascript) files for each page (+page.server.ts).
+          -- routes               <- This is where the real magic happens. This contains the main layout file (+layout.svelte), each Svelte file (+page.svelte) for every page, as well as TypeScript (JavaScript) files for each page (+page.server.ts).
               -- +error.svelte         <- A page that is shown when using server-side rendering and the server runs into an error, or a page can't be displayed.
               -- +layout.svelte        <- This is what gets directly rendered by the app.html file. This includes the header, footer, and every sub-page gets rendered through this.
-              -- +layout.ts            <- This file contains settings for how the website should get rendered. Like should it use trailing slashs, etc...
+              -- +layout.ts            <- This file contains settings for how the website should be rendered. Like, should it use trailing slashes, etc...
               -- +page.svelte          <- This is the main page that appears when you go to /honors/
               -- +page.server.ts       <- This is the server code for the main page. All it does is go through the markdown files in the events folder and return a list of events to be displayed on the main page.
               -- apply/+page.svelte    <- The Svelte page that is displayed at /honors/apply
@@ -181,23 +181,23 @@ Here is a list of the files and an explanation on their purpose.
               -- photos/+page.svelte   <- The Svelte page that is displayed at /honors/photos
               -- team/+page.svelte     <- The Svelte page that is displayed at /honors/team
 
-Note: To create a new page, all you have to do is create a new folder in routes, and add a +page.svelte file inside of it.
+Note: To create a new page, all you have to do is create a new folder in routes and add a +page.svelte file inside of it.
 ```
 
 # Web Server Structure
-Here is what your /honors folder on the web server shoudl look like once you compile the project and copy the files from the build folder:
+Here is what your /honors folder on the web server should look like once you compile the project and copy the files from the build folder:
 
 ## Default (With trailing slashes set to always):
 
 ```
 -- honors        <- Main Folder
-  -- index.html        <- The main page html file.
+  -- index.html        <- The main page HTML file.
   -- robots.txt        <- The list of pages that are allowed to be scraped by robots
-  -- data.json        <- Extra data used by the javascript files 
+  -- data.json        <- Extra data used by the JavaScript files 
   -- _app        <- Contains the backbone of the website
       -- env.js        <- Build Settings
-      -- Version.json  <- Contains the random idenfitfier of the build
-      -- immutables    <- A collection of all of the random javascript files, images, and resources that is then displayed by the each html file.
+      -- Version.json  <- Contains the random identifier of the build
+      -- immutables <- A collection of all of the random JavaScript files, images, and resources that is then displayed by each HTML file.
   -- apply/index.html     <- The index.html for the apply page
   -- events/index.html    <- The index.html for the events page
   -- photos/index.html    <- The photos.html for the photos page
@@ -209,15 +209,15 @@ Here is what your /honors folder on the web server shoudl look like once you com
 
 ```
 -- honors        <- Main Folder
-  -- index.html        <- The main page html file.
+  -- index.html        <- The main page HTML file.
   -- robots.txt        <- The list of pages that are allowed to be scraped by robots
-  -- data.json        <- Extra data used by the javascript files 
+  -- data.json        <- Extra data used by the JavaScript files 
   -- _app        <- Contains the backbone of the website
       -- env.js        <- Build Settings
-      -- Version.json  <- Contains the random idenfitfier of the build
-      -- immutables    <- A collection of all of the random javascript files, images, and resources that is then displayed by the each html file.
-  -- apply.html     <- The html file for the apply page
-  -- events.html    <- The html file for the events page
-  -- photos.html    <- The html file for the photos page
-  -- team.html      <- The html file for the team page
+      -- Version.json  <- Contains the random identifier of the build
+      -- immutables <- A collection of all of the random JavaScript files, images, and resources that is then displayed by each HTML file.
+  -- apply.html     <- The HTML file for the apply page
+  -- events.html    <- The HTML file for the events page
+  -- photos.html    <- The HTML file for the photos page
+  -- team.html      <- The HTML file for the team page
 ```
