@@ -91,7 +91,7 @@ Note for Windows Users: If you are on Windows, then be sure to use a Command-Pro
 
 The first time you open the project up, you have to run:
 
-```
+```bash
 npm install
 ```
 
@@ -102,14 +102,14 @@ Now that you have your project all set up, you are now ready to either run a dev
 
 If you want to test out the website, simply go back to the terminal and run:
 
-```
+```bash
 npm run dev
 ```
 
 and click on the link that is then displayed in the terminal
 
 For example, if your terminal looks like this:
-```
+```bash
 VITE v7.1.5  ready in 371 ms 
 ➜  Local:   http://localhost:5173/honors
 ```
@@ -125,7 +125,7 @@ Now, once you have all of the changes you want saved and are ready to upload the
 
 In case that was too long and you didn't read, *TLDR:* to convert the code into HTML and JavaScript, you simply have to run:
 
-```
+```bash
 npm run build
 ```
 
@@ -146,7 +146,7 @@ To quickly recap, in these sections, you learned how to:
 
 # Project File Structure:
 Here is a list of the files and an explanation of their purpose.
-```
+```yaml
 -- Honor-Society-Website      <- Main Folder
   -- READNE.md                <- This Markdown File You're Reading
   -- LICENSE                  <- Project's License
@@ -189,7 +189,7 @@ Here is what your `/honors` folder on the web server should look like once you c
 
 ## Default (With trailing slashes set to always):
 
-```
+```yaml
 -- honors        <- Main Folder
   -- index.html        <- The main page HTML file.
   -- robots.txt        <- The list of pages that are allowed to be scraped by robots
@@ -207,7 +207,7 @@ Here is what your `/honors` folder on the web server should look like once you c
 
 ## With trailing slashes set to never:
 
-```
+```yaml
 -- honors        <- Main Folder
   -- index.html        <- The main page HTML file.
   -- robots.txt        <- The list of pages that are allowed to be scraped by robots
