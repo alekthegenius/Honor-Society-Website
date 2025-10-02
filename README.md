@@ -200,7 +200,7 @@ Here is what your /honors folder on the web server shoudl look like once you com
       -- immutables    <- A collection of all of the random javascript files, images, and resources that is then displayed by the each html file.
   -- apply/index.html     <- The index.html for the apply page
   -- events/index.html    <- The index.html for the events page
-  -- photos/index.html    <- The photos.html for the apply page
+  -- photos/index.html    <- The photos.html for the photos page
   -- team/index.html      <- The index.html for the team page
 ```
 
@@ -218,6 +218,6 @@ Here is what your /honors folder on the web server shoudl look like once you com
       -- immutables    <- A collection of all of the random javascript files, images, and resources that is then displayed by the each html file.
   -- apply.html     <- The html file for the apply page
   -- events.html    <- The html file for the events page
-  -- photos.html    <- The html file for the apply page
+  -- photos.html    <- The html file for the photos page
   -- team.html      <- The html file for the team page
 ```
