@@ -24,7 +24,7 @@ Now, of course, you can't just give a web browser a .svelte file and expect it t
 The first step is to download Node.js and its package manager NPM (the JavaScript engine required for compiling the Svelte code).
 
 **Windows:**
-Go to [Node.js/Download](https://nodejs.org/en/download/current) and make sure to select v22.20.0 LTS and select x64 if your computer was made in the last 10 years and your processor is 64-bit, x86 if your processor is ancient and 32-bit, or Arm 64 if you're fancy and your processor is an Arm chip. From there, you'll want to download the Windows installer and install it like any standard app. Note, you don't have to install the optional Chocolatey stuff. Before moving on, do yourself a quick favor and open up the `Command-Line` app and run the commands `node -v` and `npm -v` to verify that you installed everything correctly.
+Go to [Node.js/Download](https://nodejs.org/en/download/current) and make sure to select v22.20.0 LTS and make sure to select v22.20.0 LTS and select x64 if your computer was made in the last 10 years and your processor is 64-bit, x86 if your processor is ancient and 32-bit, or Arm 64 if you're fancy and your processor is an Arm chip. From there, you'll want to download the Windows installer and install it like any standard app. Note, you don't have to install the optional Chocolatey stuff. Before moving on, do yourself a quick favor and open up the `Command-Line` app and run the commands `node -v` and `npm -v` to verify that you installed everything correctly.
 
 **Macos:**
 On macOS, I recommend the command-line approach to have an easier time. Run the following commands to install Node.js and NPM (the package manager).
