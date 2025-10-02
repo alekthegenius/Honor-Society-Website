@@ -151,6 +151,17 @@ To quickly recap, in these sections, you learned how to:
 4. Previewing the website with `npm run dev`
 5. And finally, uploading the website to your web server by running `npm run build` and saving the contents of the build folder under a folder titled `honors` on your web server.
 
+## I get how to install it, just tell me which files I need to change the website
+
+- Inside the `src/routes` you will see one `+page.svelte` in each of the sub-folders. That is the Svelte file for each page. The way Svelte works, is each page is its own folder, and the code for the page is the `+page.svelte` file inside of the folder.
+
+Remember, all a Svelte file is, is a <script> tag with JavaScript at the top, your HTML code in the middle, and CSS code at the bottom. Now I use TypeScript and SASS, but it's exactly the same.
+
+- Inside of `src/lib/components` are a collection of Svelte files that I import into the pages, like the requirements table, etc...
+- Lastly, there's the `+layout.svelte` file, where I have the header, which stays at the top of the website, and has links to go to the Faith website. The `{@render children?.()}` is the spot where each page gets rendered into. Finally, the `+layout.svelte` also has a footer which I imported from my Svelte component folder.
+
+Hopefully that all makes sense and you get an idea of how to make changes.
+
 
 # Project File Structure:
 Here is a list of the files and an explanation of their purpose.
@@ -192,16 +203,6 @@ Here is a list of the files and an explanation of their purpose.
 Note: To create a new page, all you have to do is create a new folder in routes and add a +page.svelte file inside of it.
 ```
 
-## Thats too much stuff, just tell me which files have the website
-
-- Inside the `src/routes` you will see one +page.svelte in each of the sub-folders. That is the Svelte code for each page.
-
-Remember, all a Svelte file is is you have JavaScript at the top, your HTML code in the middle, and CSS code at the bottom. Now I use TypeScript and SASS, but it's exactly the same.
-
-- Inside of `src/lib/components` are a collection of Svelte files that I import into the pages, like the requirements table, etc...
-- Lastly, there's the `+layout.svelte` file, where I have the header, which stays at the top of the website, and has links to go to the Faith website. The `{@render children?.()}` just means it will render each page in the area. Lastly, the `+layout.svelte` also has a footer which I imported from my Svelte component folder.
-
-Hopefully that all makes sense and you get an idea of how to make changes.
 
 ## Web Server Structure
 Here is what your `/honors` folder on the web server should look like once you compile the project and copy the files from the `build` folder:
