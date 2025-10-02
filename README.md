@@ -110,7 +110,7 @@ Now, once you have all of the changes you want saved and are ready to upload the
 In case that was too long and you didn't read, *TLDR:* to convert the code into HTML and JavaScript, you simply have to run `npm run build` and that will output the files in a `build` folder inside of the honorsite folder.
 
 I have configured the project to expect to have a `base path` at `/honors`, so the main page would be at https://www.faith-homeschool.com/honors, the photos will be at https://www.faith-homeschool.com/honors/photos, etc...
-In order to upload it to HostGator, you have to copy the newly created `build` folder to the root folder on the web server and rename it to `honors`. If you would like to learn how to change the `base path`, refer to the section on `svelte.config.js` below.
+In order to upload it to HostGator, you have to copy the files in the newly created `build` folder to a folder named `honors` in the root folder on your web server. If you would like to learn how to change the `base path`, refer to the section on `svelte.config.js` below.
 
 # Wrapping up
 To quickly recap, in these sections, you learned how to:
@@ -118,6 +118,6 @@ To quickly recap, in these sections, you learned how to:
 2. Download the code and open it in VSCode
 3. Install all of the required libraries by running `npm install`
 4. Previewing the website with `npm run dev`
-5. And finally, uploading the website to your web server by running `npm run build` and saving the build folder as "honors" onto your web server.
+5. And finally, uploading the website to your web server by running `npm run build` and saving the contents of the build folder under a folder titled `honors` on your web server.
 
 
