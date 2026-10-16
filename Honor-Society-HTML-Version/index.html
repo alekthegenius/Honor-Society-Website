@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Faith Honor Society</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/x-icon" href="static/favicon/favicon.ico">
+        <meta name="description" content="Faith Honor Society is a national homeschool honor society that recognizes achievements, encourages scholarship, and empowers leaders among the homeschool community.">
+        <meta name="theme-color" content="#2a2b2a">
+
+        <link rel="stylesheet" href="static/styles.css">
+
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+
+        <script src="https://kit.fontawesome.com/f44aaaec9d.js" crossorigin="anonymous"></script>
+    </head>
+
+
+<body>
+
+    <header style="box-shadow: 0 5px 5px rgba(0, 0, 0, 0.326);">
+        <div class="header-inner">
+            <!-- The Logo and Title -->
+            <a href="#topSection" class="header-logo" style="text-decoration: none;">
+                <img class="logo" src="static/logo.png" alt="Faith Honor Society Logo" />
+                <h1 class="regular-title">Faith Honor Society</h1>
+                <h1 class="minimized-title">FHS</h1>
+            </a>
+
+            <!-- The Middle Links -->
+            <div class="desktop-urls">
+                <a href="https://www.faith-homeschool.com/index.htm">FAITH Home</a>
+                <a href="https://www.faith-homeschool.com/join.htm">Join FAITH</a>
+                <a href="https://www.faith-homeschool.com/signup2.htm">Extracurriculars</a>
+                <a href="https://www.faith-homeschool.com/tascs.htm">Teen Volunteers</a>
+                <a href="https://www.faith-homeschool.com/linksnew.htm">Helpful Links</a>
+            </div>
+            
+           
+
+            <!-- The Dropdown Menu Button that is Displayed When the Screen Is Too Small to Show the Middle Links. It is hidden when the device gets too small using some clever CSS Code -->
+            <button id="menuButton" onclick="toggleMenuDropdown()" class="dropdown-menu-button"  aria-label="Toggle Menu">
+                <span style="font-size: 1.8rem; color: #F8F4E3;;">
+                    <i class="fa-solid fa-bars"></i>
+                </span>
+            </button>
+
+
+            <!-- The Dropdown Menu Button that is Displayed When the Screen Is Too Small to Show the Middle Links. It is shown using some clever CSS Code -->
+            <button id="mobileMenuButton" onclick="toggleMobileMenuDropdown()" class="dropdown-menu-button"  aria-label="Toggle Menu">
+                <span style="font-size: 1.8rem; color: #F8F4E3;;">
+                    <i class="fa-solid fa-bars"></i>
+                </span>
+            </button>
+            
+
+        </div>
+
+
+        <!-- Standard Dropdown Menu -->
+        <div id="menuDropdown" class="dropdown-menu">
+                <a class="dropdown-menu-item" href="#topSection">Honor Society Home</a>
+                <a class="dropdown-menu-item" href="#officerSection">Meet The Team</a>
+                <a class="dropdown-menu-item" href="#applyingSection">Apply Now</a>
+                <a class="dropdown-menu-item" href="#photosSection">See Our Favorite Pics</a>
+
+        </div>
+
+        <!-- The Dropdown Menu That is Displayed When the Screen Is Too Small to Show the Middle Links -->
+        <div id="mobileMenuDropdown" class="dropdown-menu">
+
+                <a class="dropdown-menu-item" href="#topSection">Honor Society Home</a>
+                <a class="dropdown-menu-item" href="#officerSection">Meet The Team</a>
+                <a class="dropdown-menu-item" href="#applyingSection">Apply Now</a>
+                <a class="dropdown-menu-item" href="#photosSection">See Our Favorite Pics</a>
+                <div style="height: 4px; background-color: rgba(255, 255, 255, 0.5);"></div>
+                <a class="dropdown-menu-item" href="https://www.faith-homeschool.com/index.htm">FAITH Home</a>
+                <a class="dropdown-menu-item" href="https://www.faith-homeschool.com/join.htm">Join FAITH</a>
+                <a class="dropdown-menu-item" href="https://www.faith-homeschool.com/signup2.htm">Extracurriculars</a>
+                <a class="dropdown-menu-item" href="https://www.faith-homeschool.com/tascs.htm">Teen Volunteers</a>
+                <a class="dropdown-menu-item" href="https://www.faith-homeschool.com/linksnew.htm">Helpful Links</a>
+                
+        </div>
+        
+    </header>
+
+
+    <!-- TOP SECTION -->
+
+
+    <div id="topSection" class="top-section">
+        <img class="top-section-img" src="static/header-background-image.jpg" alt="Header Image" />
+        <div class="top-section-text">
+            <div class="top-section-first-section">
+                <h1 class="regular-title">Faith Honor Society</h1>
+                <h1 class="minimized-title">FHS</h1>
+                <p>Recognizing Achievement, Encouraging Scholarship, Empowering Leaders</p>
+            </div>
+
+            <div class="top-section-second-section">
+                <a href="#applyingSection" class="top-section-join-button">Apply Now</a>
+                <a href="#eventsSection" class="top-section-join-button">View Events</a>
+                <a href="#officerSection" class="top-section-join-button">Meet the Officers</a>
+            </div>
+        </div>
+
+        
+    </div>
+
+
+
+    <!-- BIBLE VERSE -->
+
+
+    <div class="bible-section">
+        <p>By wisdom a house is built, and by understanding it is established; by knowledge the rooms are filled with all precious and pleasant riches.</p>
+        <span> ~ Proverbs 24:3-4</span>
+    </div>
+
+
+
+    <!-- HONOR SOCIETYDESCRIPTION -->
+
+
+    <div class="double-column">
+        <div class="aside">
+            <h1>National Homeschool Honor Society</h1>
+            <p>
+                Eta Sigma Alpha is the national home school honor society. It recognizes and encourages scholarship among home school students.
+            </p>
+            <p>
+                Membership is for 9th - 12th grade home school students who meet the requirements for membership listed below. Students can apply for membership anytime during the year by completing the membership application and submitting it with the required documents and membership fee.
+            </p>
+        </div>
+        
+        <div class="aside">
+            <div id="eventsSection"class="events">
+    
+                <div class="events-content" style="background-image: url(static/background-72250_1920.jpg);">
+
+                    <h1>Upcoming Events</h1>
+
+                    <div>Very Important Ceremony - June 15th, 2024</div>
+                    <div>Very Important Service Day - July 20th, 2024</div>
+                    <div>Very Important Workshop - August 10th, 2024</div>
+                    <div>Very Important Banquet - September 25th, 2024</div>
+                    
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!-- TYPE OF HONOR SOCIETIES OFFERED -->
+
+
+    <div class="honor-society-types" style="padding: 2rem; background-color: #F8F4E3;">
+        <h1>We Offer 3 Unique Honor Societies</h1>
+        <div class="honor-type-description">
+            <a href="https://etasigmaalpha.com/" class="types-column">
+                <h2>Eta Sigma Alpha</h2>
+                <p>For excellence in overall scholarship</p>
+            </a>
+
+            <a href="https://www.mathhonorsociety.com/" class="types-column"> 
+                <h2>Mu Eta Sigma</h2>
+                <p>For excellence in math</p>
+            </a>
+
+            <a href="https://nhsshs.org/" class="types-column">
+                <h2>National Home School Science</h2>
+                <p>For excellence in science</p>
+            </a>
+        </div>
+    </div>
+
+
+
+    <!-- WHY JOIN SECTION -->
+
+
+    <div class="why-join-section">
+        <h1>Why Join an Honor Society?</h1>
+        <ul>
+            <li>Recognition for academic achievement</li>
+            <li>Looks good on your transcript when you apply to colleges</li>
+            <li>Community service opportunities</li>
+            <li>Meet other students striving for academic excellence</li>
+            <li>Network with community leaders</li>
+            <li>Training, motivation and encouragement</li>
+            <li>Get to wear honor cord and other regalia at graduation</li>
+            <li>It's fun!</li>
+
+        </ul>
+    </div>
+
+
+
+
+    <!-- OFFICER SECTION -->
+
+
+
+    <div id="officerSection" class="officer-section">
+        <h1 class="title-header">Our Leaders</h1>
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+
+            <!-- Images with number and caption text -->
+            <div class="mySlides fade">
+                <div class="text" style="position: absolute; top: 42%; left: 0; background-color: rgba(255, 255, 255, 0);">Levi Burroughs <br> President</div>
+            </div>
+
+            <div class="mySlides fade" style="background-image: url('static/headshots/NoahHeadshot.JPG'); background-size: contain; background-position-x: center;">
+                <div class="text">Noah Weaver <br> Communications Officer</div>
+            </div>
+
+            <div class="mySlides fade" style="background-image: url('static/headshots/ElishaHeadshot.JPG'); background-size: contain; background-position-x: center;">
+                <div class="text">Elisha Lee <br> Vice President</div>
+            </div>
+
+
+
+            <div class="mySlides fade">
+                <div class="text" style="position: absolute; top: 42%; left: 0; background-color: rgba(255, 255, 255, 0);">Micah Moss <br> Chapter Secretary</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="text" style="position: absolute; top: 42%; left: 0; background-color: rgba(255, 255, 255, 0);">Mary Warnock <br> Photographer</div>
+            </div>
+
+            <div class="mySlides fade" style="background-image: url('static/headshots/AlekHeadshot.jpg'); background-size: contain; background-position-x: center;">
+                <div class="text">Alek Vasek <br> Web master</div>
+            </div>
+
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusOfficerSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusOfficerSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentOfficerSlide(1)"></span>
+            <span class="dot" onclick="currentOfficerSlide(2)"></span>
+            <span class="dot" onclick="currentOfficerSlide(3)"></span>
+            <span class="dot" onclick="currentOfficerSlide(4)"></span>
+            <span class="dot" onclick="currentOfficerSlide(5)"></span>
+            <span class="dot" onclick="currentOfficerSlide(6)"></span>
+        </div>
+
+    </div>
+
+
+
+   
+
+    
+    
+    <!-- APPLYING -->
+
+
+
+    <div id="applyingSection" class="applying-description">
+        <div class="flex-section">
+            <h1>Applying for Membership</h1>
+            <p>To apply for membership, download and complete the application. You may apply for more than one honor society.</p>
+            <p>Mail completed applications to: <span style="text-decoration: underline;">Amy Brunsting, 2582 Country Ledge Drive, New Braunfels, TX 78132</span></p>
+        </div>
+        
+        <div class="flex-section">
+            <h1>Application Links</h1>
+            <div class="application-links">
+                <a href="/static/applications/ETAHonorSocietyApplication.pdf" download="Eta Sigma Alpha Honor Society Application">Eta Sigma Alpha Honor Society</a>
+                <a href="https://www.mathhonorsociety.com/apply-renew-senior-upgrade">Mu Eta Sigma Math Honor Society</a>
+                <a href="https://etasigmaalpha.com/nhsshs-application/">National Home School Science Honor Society</a>
+            </div>
+
+        </div>
+    </div>
+
+
+    
+    <!-- MEMBERSHIP REQUIREMENTS TABLE -->
+
+
+
+    <div class="flex-grid-container">
+        <h1>Membership Requirements</h1>
+        
+        
+        <div class="overflow-table-container">
+            <div class="grid-table">
+                <table id="honorTable">
+                    <thead></thead>
+                    <tbody></tbody>
+                </table>
+
+            </div>
+        </div>
+    </div>
+
+
+     <!-- PHOTO SECTION -->
+
+
+
+    <div id="photosSection" class="photos-section">
+        <h1 class="title-header">Pics from this Year</h1>
+        <!-- Slideshow container -->
+        <div class="photo-slideshow-container">
+
+            <div class="myPhotoSlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="static/pics/PXL_20260217_003850454.jpg" style="width:100%; border-radius: 10px;">
+            </div>
+
+            <div class="myPhotoSlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="static/pics/PXL_20260217_003904506.jpg" style="width:100%; border-radius: 10px;">
+            </div>
+
+            <div class="myPhotoSlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="static/pics/PXL_20260217_004038503.jpg" style="width:100%; border-radius: 10px;">
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusPhotoSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusPhotoSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="photo-dot" onclick="currentPhotoSlide(1)"></span>
+            <span class="photo-dot" onclick="currentPhotoSlide(2)"></span>
+            <span class="photo-dot" onclick="currentPhotoSlide(3)"></span>
+        </div>
+
+    </div>
+
+
+    <!-- CONTACT FORM -->
+
+
+
+    <div class="apply-form">
+        <h2>Questions? Feel Free to Contact Us!</h2>
+        <form id="contactForm" name="contactForm">
+            <span>Name</span>
+            <input type="text" name="name" placeholder="John Doe" required><br>
+            <span>Message</span>
+            <textarea name="body" placeholder="Hey there! I just had a question regarding..." required></textarea><br>
+            <input class="submit-button" type="submit" id="submitContactForm" value="Send">
+        </form>
+    </div>
+
+    <div class="horizontal-divider"></div>
+
+
+
+
+    <!-- FOOTER -->
+
+
+
+    <div class="footer">
+
+        <div class="contact-container">
+            <h1>Contact</h1>
+            
+            <a href="mailto:faith_home_school@yahoo.com" class="full-email"><i class="fa-solid fa-envelope"></i> faith_home_school@yahoo.com</a>
+            <a href="mailto:faith_home_school@yahoo.com" class="short-email"><div class="icon" style="text-align: center;"><i class="fa-solid fa-envelope"></i></div>faith_home_school@yahoo.com</a>
+            <a href="https://www.facebook.com/groups/1215840325094819/"><i class="fa-brands fa-facebook"></i> FAITH Home School Group</a>
+            
+        </div>
+    
+
+        <div class="footer-description">
+            <h1>Faith Homeschool</h1>
+            <h2>New Braunfels, Texas</h2>
+
+            <p>FAITH is a Christian home school support group made up of families from New Braunfels, Canyon Lake, Seguin, San Marcos, and Schertz.</p>
+        </div>
+
+        
+    </div>
+
+    
+<!-- JAVSCRIPT -->
+<script src="static/script.js"></script>
+
+</body>
+</html>
